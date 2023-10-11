@@ -1,7 +1,22 @@
+:root {
+  background: white;
+}
 html {
   max-width: 720px;
 }
-
-body {
-  background: #fff;
+.card > p {
+  color: green;
+  writing-mode: vertical-rl;
+}
+p:focus,
+p:active {
+  -webkit-text-fill-color: red;
+  -webkit-text-stroke: 2px blue;
+}
+.deco {
+  text-decoration: underline dashed blueviolet;
+}
+* {
+  font-family: 'Roboto', sans-serif;
+  font-display: swap;
 }
