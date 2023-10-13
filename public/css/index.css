@@ -20,3 +20,24 @@ p:active {
   font-family: 'Roboto', sans-serif;
   font-display: swap;
 }
+.box {
+  background-color: rgb(165, 250, 221);
+  margin-bottom: 20px;
+  border-radius: 50px;
+}
+.card_header {
+  border: 1px double blue;
+  padding: 5px;
+}
+.temp {
+  display: block;
+  text-decoration: none;
+  background-color: yellow;
+  max-width: fit-content;
+  border-radius: 25px;
+  padding: 5px;
+  margin: 5px;
+}
+.temp:hover {
+  background-color: rgb(162, 255, 0);
+}
