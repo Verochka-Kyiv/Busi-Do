@@ -95,6 +95,11 @@
   text-decoration: none;
   line-height: 100%;
 }
+.divider {
+  margin: 0;
+  height: 1px;
+  background: #dee2e6;
+}
 
 .nav_link:hover {
   text-decoration: underline;
