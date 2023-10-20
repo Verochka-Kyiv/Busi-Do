@@ -30,6 +30,7 @@
   gap: 80px;
   flex-shrink: 0;
   margin: 0 auto;
+  font-family: Roboto;
 }
 
 .page_content {
@@ -54,7 +55,6 @@
   border-top: 1px solid var(--color-border);
   display: flex;
   justify-content: space-between;
-  font-family: Roboto;
 }
 
 .footer_copyright {
@@ -65,7 +65,6 @@
   line-height: normal;
   display: block;
   margin-top: var(--space-l);
-  font-family: Roboto;
 }
 
 .footer_title {
@@ -163,7 +162,7 @@
   max-width: fit-content;
   max-height: 36px;
   text-align: center;
-  font-family: Roboto;
+
   font-size: var(--size-d);
   font-weight: var(--weight-text);
 }
@@ -192,7 +191,7 @@
 .featured_card_title {
   width: 184px;
   color: var(--color-title);
-  font-family: Roboto;
+
   font-size: var(--size-l);
   font-style: normal;
   font-weight: var(--weight-title);
@@ -200,9 +199,7 @@
 }
 .featured_card_text {
   width: 288px;
-
   color: var(--color-text);
-  font-family: Roboto;
   font-size: var(--size-d);
   font-weight: var(--weight-text);
   line-height: 170%;
@@ -214,7 +211,6 @@
   flex-direction: column;
   justify-content: center;
   color: var(--color-primary);
-  font-family: Roboto;
   font-size: var(--size-d);
   font-weight: var(--weight-text);
   line-height: 100%;
@@ -233,7 +229,6 @@
 }
 .actions_heading {
   color: var(--color-white);
-  font-family: Roboto;
   font-size: var(--size-l);
   font-weight: var(--weight-text);
   line-height: 16px;
@@ -252,7 +247,6 @@
   color: #212529;
   margin: 12px;
   text-align: center;
-  font-family: Roboto;
   font-size: var(--size-l);
   font-weight: var(--weight-text);
   line-height: 100%;
