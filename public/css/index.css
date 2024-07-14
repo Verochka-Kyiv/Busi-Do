@@ -33,11 +33,11 @@ main {
   background-color: black;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 12px;
   cursor: pointer;
   text-align: center; /* Вирівнювання тексту по центру кнопки */
   text-decoration: none; /* Відсутність підкреслення */
-  transition: background 0.3s ease; /* Плавний перехід фону */
+  transition: background 0.03s ease; /* Плавний перехід фону */
 }
 
 .blbtn:first-child {
@@ -105,7 +105,104 @@ main {
   }
 }
 
+/* ------------------------------------------------------ */
+
+.video-section {
+  display: flex; /* Додаємо flexbox */
+  flex-direction: column; /* Розташовуємо елементи вертикально */
+  justify-content: center; /* Вирівнюємо по вертикалі */
+  align-items: center; /* Вирівнюємо по горизонталі */
+  text-align: center;
+  margin-top: 20px;
+  max-width: 1200px;
+  margin: 20px auto; /* Центруємо блок відео по горизонталі */
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+}
+.header-text {
+  font-size: 28px;
+  text-align: center;
+  margin: 12px;
+}
 /* ***************************************** */
+.listtrainers {
+  display: flex;
+  flex-direction: column; /* Розташовуємо елементи вертикально */
+  align-items: center; /* Вирівнюємо елементи по горизонталі */
+  max-width: 1200px; /* Максимальна ширина контейнера */
+  margin: 0 auto; /* Центруємо контейнер по горизонталі */
+  padding: 20px; /* Додаємо внутрішні відступи */
+}
+.item-left,
+.item-right {
+  display: flex;
+  align-items: center; /* Центруємо елементи по вертикалі */
+  width: 100%; /* Ширина 100% для кожного елемента */
+  margin-bottom: 20px; /* Додаємо відступ між елементами */
+}
+
+.item-left .photo,
+.item-right .photo {
+  max-width: 40%; /* Обмежуємо ширину зображення */
+  max-height: 60%; /* Обмежуємо висоту зображення */
+  object-fit: cover; /* Зберігаємо пропорції зображення */
+}
+
+.item-left .text,
+.item-right .text {
+  padding-left: 20px; /* Додаємо відступ між фото і текстом */
+  width: 50%; /* Ширина колонки з текстом */
+}
+.item-right {
+  flex-direction: row-reverse; /* Розташовуємо зображення праворуч */
+}
+.train-header {
+  font-size: 2em; /* Збільшуємо розмір шрифту для заголовка */
+  font-weight: bold; /* Робимо шрифт жирним */
+}
+
+.train-status {
+  font-size: 1.8em; /* Збільшуємо розмір шрифту для статусу */
+  color: #888585; /* Змінюємо колір тексту для статусу */
+}
+
+.info {
+  margin-top: 10px; /* Додаємо верхній відступ для додаткової інформації */
+}
+.info li {
+  position: relative; /* Встановлюємо відносне позиціонування для маркерів */
+  margin-bottom: 10px;
+  padding-left: 20px; /* Додаємо відступ для маркерів */
+}
+
+.info li::before {
+  content: '-'; /* Встановлюємо символ для маркерів */
+  position: absolute;
+  left: 0;
+  color: white; /* Колір маркера */
+}
+
+@media (max-width: 768px) {
+  .item-left {
+    flex-direction: column; /* В колонку на маленьких екранах */
+    align-items: flex-start; /* Вирівнювання по лівому краю */
+  }
+
+  .photo,
+  .text {
+    width: 100%; /* Ширина 100% для кожного елемента в колонці */
+  }
+
+  .text {
+    padding-left: 0; /* Відміняємо відступ між фото і текстом на маленьких екранах */
+    margin-top: 20px; /* Додаємо відступ між фото і текстом */
+  }
+}
+
+/* -------------------------------------------- */
 /* Медіа-запити для адаптивного дизайну */
 
 /* Для мобільних пристроїв */
