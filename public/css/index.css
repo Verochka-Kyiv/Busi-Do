@@ -65,8 +65,17 @@ main {
   align-items: center;
   max-width: 800px; /* Задайте ширину контейнера відповідно до вашого макету */
   margin: 0 auto; /* Центрування на сторінці */
-  padding: 20px;
+  padding: 8px;
   /* background-color: #f0f0f0; Фоновий колір контейнера */
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 11%,
+    rgba(255, 30, 16, 1) 40%,
+    rgba(255, 30, 16, 1) 50%,
+    rgba(255, 30, 16, 1) 60%,
+    rgba(0, 0, 0, 1) 89%
+  );
 }
 
 .welcome-left,
@@ -74,11 +83,14 @@ main {
   flex: 1; /* Розтягнення блоків ліворуч і праворуч на однакове простір */
   text-align: center; /* Вирівнювання тексту по центру */
 }
-
-.welcome-logo {
-  max-width: 120px; /* Максимальна ширина логотипу */
-  max-height: 120px;
-  margin-bottom: 20px; /* Відступ між логотипом і текстом */
+.welcome-mob {
+  text-decoration: none;
+  color: white;
+}
+.welcome-logo img {
+  max-width: 160px; /* Максимальна ширина логотипу */
+  max-height: 160px;
+  margin: 4px; /* Відступ між логотипом і текстом */
 }
 
 @media (max-width: 768px) {

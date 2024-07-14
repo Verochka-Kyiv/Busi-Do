@@ -29,7 +29,7 @@ router.get('/', function (req, res) {
       {
         text1: 'Яковлева Альона Ігорівна',
         mob1: '+380 93 921 93 93',
-        emblema: '/public/img/logo_BD_white.png',
+        logo: '/img/logo_BD_w.png',
         text2: 'Яковлев Максим Ігорович',
         mob2: '+380 63 241 33 51',
       },
