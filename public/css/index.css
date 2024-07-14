@@ -1,57 +1,131 @@
 :root {
-  background: white;
+  background-color: black; /* Чорний фон */
 }
 html {
-  max-width: 720px;
+  max-width: 1560px;
 }
-.card > p {
-  color: green;
-  writing-mode: vertical-rl;
+main {
+  background-color: black;
+  color: white; /* Білий текст */
+  font-family: Arial, sans-serif; /* Встановлення шрифта */
 }
-p:focus,
-p:active {
-  -webkit-text-fill-color: red;
-  -webkit-text-stroke: 2px blue;
-}
-.deco {
-  text-decoration: underline dashed blueviolet;
-}
-* {
-  font-family: 'Roboto', sans-serif;
-  font-display: swap;
-}
-.box {
-  background-color: rgb(165, 250, 221);
-  margin-bottom: 20px;
-  border-radius: 50px;
-}
-.card_header {
-  border: 3px dotted rgb(71, 242, 179);
-  margin: 16px;
-  padding: 16px;
-}
-.temp {
-  display: block;
-  text-decoration: none;
-  background-color: yellow;
-  max-width: fit-content;
-  border-radius: 25px;
-  padding: 5px;
-  margin: 5px;
-}
-.temp:hover {
-  background-color: rgb(162, 255, 0);
-}
-.base {
-  max-width: 340px;
-  width: 100%;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-  border-radius: var(--border-radius-d);
-  background-color: var(--color-white);
-  padding: var(--space-l);
+
+.head {
   display: flex;
-  flex-direction: column;
-  gap: var(--space-l);
-  margin: 12px;
-  padding: 12px;
+  justify-content: center; /* Горизонтальне центрування */
+  align-items: center; /* Вертикальне центрування */
+  height: 48px; /* Висота контейнера на всю висоту вікна */
+  background-color: black; /* Задній фон для всього екрану */
+}
+.black-header {
+  display: flex;
+  justify-content: center; /* Розташувати кнопки з рівними відступами між ними */
+  gap: 12px;
+  width: 100%;
+  padding: 10px; /* Відступи навколо контейнера кнопок */
+  background-color: black;
+}
+
+.blbtn {
+  flex: none; /* Кожна кнопка займає рівну частину ширини контейнера */
+  margin: 0 5px; /* Відступи між кнопками */
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center; /* Вирівнювання тексту по центру кнопки */
+  text-decoration: none; /* Відсутність підкреслення */
+  transition: background 0.3s ease; /* Плавний перехід фону */
+}
+
+.blbtn:first-child {
+  margin-left: 0; /* Відсутність відступу перед першою кнопкою */
+}
+
+.blbtn:last-child {
+  margin-right: 0; /* Відсутність відступу після останньої кнопки */
+}
+
+.blbtn:hover {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 11%,
+    rgba(230, 26, 14, 1) 50%,
+    rgba(0, 0, 0, 1) 89%
+  );
+}
+
+/* ---------------------------------------- */
+.welcome-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px; /* Задайте ширину контейнера відповідно до вашого макету */
+  margin: 0 auto; /* Центрування на сторінці */
+  padding: 20px;
+  /* background-color: #f0f0f0; Фоновий колір контейнера */
+}
+
+.welcome-left,
+.welcome-right {
+  flex: 1; /* Розтягнення блоків ліворуч і праворуч на однакове простір */
+  text-align: center; /* Вирівнювання тексту по центру */
+}
+
+.welcome-logo {
+  max-width: 120px; /* Максимальна ширина логотипу */
+  max-height: 120px;
+  margin-bottom: 20px; /* Відступ між логотипом і текстом */
+}
+
+@media (max-width: 768px) {
+  .welcome-container {
+    flex-direction: column; /* Розміщення у стовпчик на малих екранах */
+  }
+
+  .welcome-left,
+  .welcome-right {
+    flex: unset; /* Скасувати розтягнення на малих екранах */
+    text-align: center; /* Вирівнювання тексту по центру */
+  }
+}
+
+/* ***************************************** */
+/* Медіа-запити для адаптивного дизайну */
+
+/* Для мобільних пристроїв */
+@media (max-width: 600px) {
+  .black-header {
+    flex-direction: column; /* Вертикальне розташування кнопок */
+  }
+
+  .blbtn {
+    width: 100%; /* Кнопки займають всю ширину контейнера */
+    margin: 5px 0; /* Відступи між кнопками */
+  }
+}
+
+/* Для планшетів */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .black-header {
+    flex-direction: row; /* Горизонтальне розташування кнопок */
+  }
+
+  .blbtn {
+    width: auto; /* Кнопки займають свою природну ширину */
+  }
+}
+
+/* Для настільних комп'ютерів */
+@media (min-width: 1025px) {
+  .black-header {
+    flex-direction: row; /* Горизонтальне розташування кнопок */
+  }
+
+  .blbtn {
+    width: auto; /* Кнопки займають свою природну ширину */
+  }
 }

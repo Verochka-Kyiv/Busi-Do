@@ -1,27 +1,37 @@
 {{!-- Це код container файлу для index сторінки,
 в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
 --}}
-<main class="m-5">
-    <div class="card p-5 box">
-        <div class="card_header">
-            <h2>My templates:</h2>
-            <div class="card-body base">
-                <a class="temp" href="/template-1">Template-1</a>
-                <a class="temp" href="/template-2">Template-2</a>
-                <a class="temp" href="/template-3">Template-3</a>
-                <a class="temp" href="/template-4">Template-4</a>
-                <a class="temp" href="/template-5">Template-5</a>
-                <a class="temp" href="/template-6">Template-6</a>
-                <a class="temp" href="/template-7">Template-7</a>
-                <a class="temp" href="/slack">Template-Slack</a>
-                <a class="temp" href="/dashboard">Template-DASHBOARD</a>
-            </div>
+<main>
+    <div class="head">
+        <div class="black-header">
+            {{#each header}}
+            <a class="blbtn" href="{{url}}">
+                {{text}}
+            </a>
+            {{/each}}
         </div>
     </div>
 
+    <div class="welcome-container">
+        <div class="welcome-left">
+            <div class="welcome-text1">Яковлева Альона Ігорівна</div>
+            <div class="welcome-mob1">+380 93 921 93 93</div>
+        </div>
+        <div class="welcome-logo">
+            <img src="/public/img/logo_busi_do_UKR_white_letters.png" alt="Emblema">
+        </div>
+        <div class="welcome-right">
+            <div class="welcome-text2">Яковлев Максим Ігорович</div>
+            <div class="welcome-mob2">+380 63 241 33 51</div>
+        </div>
+    </div>
 
-    {{!-- Цей код містить лише те, що буде виводитись в
+</main>
 
-    <body>
-        Адже наш layout/default.hbs має вже структуру HTML
-        --}}
+
+
+{{!-- Цей код містить лише те, що буде виводитись в
+
+<body>
+    Адже наш layout/default.hbs має вже структуру HTML
+    --}}
