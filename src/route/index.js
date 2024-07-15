@@ -25,6 +25,13 @@ const video = [
 
 //           ↙ тут вводимо шлях (PATH) до сторінки
 router.get('/', function (req, res) {
+  const gallery = [
+    { header: 'Фотогалерея' },
+    { photo: '/img/photo1.jpg' },
+    { photo: '/img/photo2.jpg' },
+    { photo: '/img/photo3.jpg' },
+    { photo: '/img/photo4.jpg' },
+  ]
   // res.render генерує нам HTML сторінку
 
   //            ↙ cюди вводимо назву файлу з сontainer
@@ -113,8 +120,9 @@ router.get('/', function (req, res) {
         ],
       },
     ],
+    galery: gallery,
     galery: [{ header: '' }, { photo: '' }],
-    champions: [{ header: '' }, { photo: '' }],
+    // champions: [{ header: '' }, { photo: '' }],
     about: [
       { head: '' },
       {
@@ -194,6 +202,7 @@ router.get('/', function (req, res) {
       pic: '',
     },
   })
+
   //                  ↑↑ сюди вводимо JSON дані
 })
 

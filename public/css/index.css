@@ -9,7 +9,35 @@ main {
   color: white; /* Білий текст */
   font-family: Arial, sans-serif; /* Встановлення шрифта */
 }
+.gradient-text {
+  font-size: 50px;
+  font-weight: bold;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 11%,
+    rgba(255, 30, 16, 1) 47%,
+    rgba(255, 30, 16, 1) 50%,
+    rgba(255, 30, 16, 1) 53%,
+    rgba(0, 0, 0, 1) 89%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
+.gradient-text {
+  font-size: 50px;
+  font-weight: bold;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 4%,
+    rgba(255, 30, 16, 1) 17%,
+    rgba(255, 30, 16, 1) 50%,
+    rgba(255, 30, 16, 1) 83%,
+    rgba(0, 0, 0, 1) 95%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .head {
   display: flex;
   justify-content: center; /* Горизонтальне центрування */
@@ -183,6 +211,104 @@ video {
   position: absolute;
   left: 0;
   color: white; /* Колір маркера */
+}
+/* ***************************************** */
+.services {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  color: white;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 11%,
+    rgba(255, 30, 16, 1) 47%,
+    rgba(255, 30, 16, 1) 50%,
+    rgba(255, 30, 16, 1) 53%,
+    rgba(0, 0, 0, 1) 89%
+  );
+}
+
+.service-item {
+  width: 200px;
+  border: none;
+  padding: 4px;
+  text-align: center;
+  background-color: none;
+}
+
+.service-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+}
+
+.textfoot {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.textfoot p {
+  margin: 5px 0;
+}
+/* ----------------------------------------------------- */
+.gall {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.gallery {
+  width: 80%;
+  max-width: 800px;
+}
+
+.main-photo img {
+  width: 100%;
+  height: auto;
+  border: 2px solid #ccc;
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: start;
+  margin-top: 20px;
+  overflow-x: auto;
+  width: 100%;
+  white-space: nowrap;
+}
+.thumbnail {
+  display: inline-block;
+  margin: 0 10px;
+}
+.thumbnails img {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+  border: 2px solid #ccc;
+  transition: border-color 0.3s;
+}
+
+.thumbnails img:hover {
+  border: 2px solid red;
+}
+/* Стилі для смуги прокрутки */
+.thumbnails::-webkit-scrollbar {
+  height: 10px;
+}
+
+.thumbnails::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.thumbnails::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 5px;
+}
+
+.thumbnails::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
 }
 
 @media (max-width: 768px) {
