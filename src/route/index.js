@@ -151,7 +151,7 @@ router.get('/', function (req, res) {
         text: '',
       },
     ],
-    sportsmeetings: [
+    sportmeetings: [
       { head: '' },
       { text: '' },
       { text: '' },
