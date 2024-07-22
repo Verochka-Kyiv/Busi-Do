@@ -9,7 +9,7 @@ main {
   color: white; /* Білий текст */
   font-family: Arial, sans-serif; /* Встановлення шрифта */
 }
-.gradient-text {
+/* .gradient-text {
   font-size: 50px;
   font-weight: bold;
   background: linear-gradient(
@@ -22,7 +22,7 @@ main {
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
+} */
 
 .gradient-text {
   font-size: 50px;
@@ -153,7 +153,7 @@ video {
 .header-text {
   font-size: 28px;
   text-align: center;
-  margin: 12px;
+  margin: 32px 12px 8px 12px;
 }
 /* ***************************************** */
 .listtrainers {
@@ -448,6 +448,28 @@ video {
 }
 
 /* ----------------------------------------------------- */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.map-container {
+  flex: 1;
+  min-width: 200px;
+  height: 200px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-info h2 {
+  margin-top: 0;
+}
 
 /* ----------------------------------------------------- */
 @media (max-width: 768px) {

@@ -2,6 +2,7 @@
 в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
 --}}
 <main>
+    {{!-- ------------------HEADER------------------------ --}}
     <div class="head">
         <div class="black-header">
             {{#each header}}
@@ -11,7 +12,7 @@
             {{/each}}
         </div>
     </div>
-
+    {{!-- -------------WELCOME----------------------------- --}}
     <div class="welcome-container">
         <div class="welcome-left">
             <div class="welcome-text1">Яковлева Альона Ігорівна</div>
@@ -26,7 +27,7 @@
         </div>
     </div>
 
-    {{!-- ------------------------------------------ --}}
+    {{!-- ---------------VIDEO--------------------------- --}}
 
     <div class="video-section">
         <div class="header-text gradient-text1">ВІТАЄМО!</div>
@@ -36,7 +37,7 @@
         </video>
     </div>
 
-    {{!-- ------------------------------------------ --}}
+    {{!-- -----------OUR TRAINERS------------------------------- --}}
     <div class="header-text gradient-text ">КОМАНДА НАШИХ ТРЕНЕРІВ</div>
     <div class="listtrainers">
 
@@ -122,7 +123,7 @@
         </div>
 
     </div>
-    {{!-- ------------------------------------------ --}}
+    {{!-- -----------SERVICES------------------------------- --}}
     <div class="header-text gradient-text">НАШІ СПОРТИВНІ ПРОПОЗИЦІЇ:</div>
     <div class="services">
         <!-- Перший елемент -->
@@ -179,7 +180,7 @@
         <p>Всі тренування відбуваються три рази на тиждень.</p>
         <p>Більш детальну інформацію можна отримати за телефонами вказаними на сайті.</p>
     </div>
-    {{!-- ------------------------------------------ --}}
+    {{!-- ---------------PHOTO MOMENTS--------------------------- --}}
     <div class="header-text gradient-text">ФОТО: Спортивні моменти</div>
     <container class="gall">
         <div class="gallery">
@@ -318,7 +319,7 @@
         }
     </script>
 
-    {{!-- ------------------------------------------ --}}
+    {{!-- ---------------OUR CHAMPIONS--------------------------- --}}
     <div class="header-text gradient-text">НАШІ ЧЕМПІОНИ:</div>
     <div class="gallery-container">
         <img src="/svg/ar_l.jpg" class="arrow left-arrow" id="left-arrow" alt="стрілка вліво">
@@ -369,7 +370,8 @@
         // Початкове відображення фото
         renderPhoto();
     </script>
-    {{!-- ------------------------------------------ --}}
+
+    {{!-- --------ABOUT---------------------------------- --}}
     <div class="header-text gradient-text">ПРО КЛУБ:</div>
     <div class="slideshow-container">
         <div class="slide active">
@@ -492,7 +494,7 @@
         // Показати перший слайд спочатку
         showSlide(currentSlideIndex);
     </script>
-    {{!-- ------------------------------------------ --}}
+    {{!-- -------------SPORT CAMP----------------------------- --}}
     <div class="header-text gradient-text">СПОРТИВНІ ЗБОРИ:</div>
     <div class="frame-container">
         <div class="frame active">
@@ -572,13 +574,6 @@
     </script>
 
 
-
-
-
-
-
-
-
     <container class="gall">
         <div class="gallery">
             <div class="main-photo">
@@ -586,128 +581,149 @@
             </div>
             <div class="thumbnails">
                 <div class="thumbnail">
-                    <img src="/img/camp/1.jpg" alt="Мініатюра 1" onclick="changePhoto('/img/camp/1.jpg')">
+                    <img src="/img/camp/1.jpg" alt="Мініатюра 1" onclick="changePhoto_c('/img/camp/1.jpg')">
                 </div>
                 <div class="thumbnail">
-                    <img src="/img/camp/2.jpg" alt="Мініатюра 2" onclick="changePhoto('/img/camp/2.jpg')">
+                    <img src="/img/camp/2.jpg" alt="Мініатюра 2" onclick="changePhoto_c('/img/camp/2.jpg')">
                 </div>
                 <div class="thumbnail">
-                    <img src="/img/camp/3.jpg" alt="Мініатюра 3" onclick="changePhoto('/img/camp/3.jpg')">
+                    <img src="/img/camp/3.jpg" alt="Мініатюра 3" onclick="changePhoto_c('/img/camp/3.jpg')">
                 </div>
                 <div class="thumbnail">
-                    <img src="/img/camp/4.jpg" alt="Мініатюра 4" onclick="changePhoto('/img/camp/4.jpg')">
+                    <img src="/img/camp/4.jpg" alt="Мініатюра 4" onclick="changePhoto_c('/img/camp/4.jpg')">
                 </div>
                 <div class="thumbnail">
-                    <img src="/img/camp/5.jpg" alt="Мініатюра 5" onclick="changePhoto('/img/camp/5.jpg')">
+                    <img src="/img/camp/5.jpg" alt="Мініатюра 5" onclick="changePhoto_c('/img/camp/5.jpg')">
                 </div>
                 <div class="thumbnail">
-                    <img src="/img/camp/6.jpg" alt="Мініатюра 6" onclick="changePhoto('/img/camp/6.jpg)">
+                    <img src="/img/camp/6.jpg" alt="Мініатюра 6" onclick="changePhoto_c('/img/camp/6.jpg)">
                 </div>
                 <div class="thumbnail">
-                    <img src="/img/camp/7.jpg" alt="Мініатюра 7" onclick="changePhoto('/img/camp/7.jpg')">
+                    <img src="/img/camp/7.jpg" alt="Мініатюра 7" onclick="changePhoto_c('/img/camp/7.jpg')">
                 </div>
                 <div class="thumbnail">
-                    <img src="/img/camp/8.jpg" alt="Мініатюра 8" onclick="changePhoto('/img/camp/8.jpg')">
+                    <img src="/img/camp/8.jpg" alt="Мініатюра 8" onclick="changePhoto_c('/img/camp/8.jpg')">
                 </div>
                 <div class="thumbnail">
-                    <img src="/img/camp/9.jpg" alt="Мініатюра 9" onclick="changePhoto('/img/camp/9.jpg')">
+                    <img src="/img/camp/9.jpg" alt="Мініатюра 9" onclick="changePhoto_c('/img/camp/9.jpg')">
                 </div>
                 <div class="thumbnail">
-                    <img src="/img/camp/10.jpg" alt="Мініатюра 10" onclick="changePhoto('/img/camp/10.jpg')">
+                    <img src="/img/camp/10.jpg" alt="Мініатюра 10" onclick="changePhoto_c('/img/camp/10.jpg')">
                 </div>
                 <div class="thumbnail">
-                    <img src="/img/camp/11.jpg" alt="Мініатюра 11" onclick="changePhoto('/img/camp/11.jpg')">
+                    <img src="/img/camp/11.jpg" alt="Мініатюра 11" onclick="changePhoto_c('/img/camp/11.jpg')">
                 </div>
                 <div class="thumbnail">
-                    <img src="/img/camp/12.jpg" alt="Мініатюра 12" onclick="changePhoto('/img/camp/12.jpg')">
+                    <img src="/img/camp/12.jpg" alt="Мініатюра 12" onclick="changePhoto_c('/img/camp/12.jpg')">
                 </div>
                 <div class="thumbnail">
-                    <img src="/img/camp/13.jpg" alt="Мініатюра 13" onclick="changePhoto('/img/camp/13.jpg')">
+                    <img src="/img/camp/13.jpg" alt="Мініатюра 13" onclick="changePhoto_c('/img/camp/13.jpg')">
                 </div>
                 <div class="thumbnail">
-                    <img src="/img/camp/14.jpg" alt="Мініатюра 14" onclick="changePhoto('/img/camp/14.jpg')">
+                    <img src="/img/camp/14.jpg" alt="Мініатюра 14" onclick="changePhoto_c('/img/camp/14.jpg')">
                 </div>
                 <div class="thumbnail">
-                    <img src="/img/camp/15.jpg" alt="Мініатюра 15" onclick="changePhoto('/img/camp/15.jpg')">
+                    <img src="/img/camp/15.jpg" alt="Мініатюра 15" onclick="changePhoto_c('/img/camp/15.jpg')">
                 </div>
                 <div class="thumbnail">
-                    <img src="/img/camp/16.jpg" alt="Мініатюра 16" onclick="changePhoto('/img/camp/16.jpg')">
+                    <img src="/img/camp/16.jpg" alt="Мініатюра 16" onclick="changePhoto_c('/img/camp/16.jpg')">
                 </div>
                 <div class="thumbnail">
                     <div class="thumbnail">
-                        <img src="/img/camp/17.jpg" alt="Мініатюра 17" onclick="changePhoto('/img/camp/17.jpg')">
+                        <img src="/img/camp/17.jpg" alt="Мініатюра 17" onclick="changePhoto_c('/img/camp/17.jpg')">
                     </div>
                     <div class="thumbnail">
-                        <img src="/img/camp/18.jpg" alt="Мініатюра 18" onclick="changePhoto('/img/camp/18.jpg')">
+                        <img src="/img/camp/18.jpg" alt="Мініатюра 18" onclick="changePhoto_c('/img/camp/18.jpg')">
                     </div>
                     <div class="thumbnail">
-                        <img src="/img/camp/19.jpg" alt="Мініатюра 19" onclick="changePhoto('/img/camp/19.jpg')">
+                        <img src="/img/camp/19.jpg" alt="Мініатюра 19" onclick="changePhoto_c('/img/camp/19.jpg')">
                     </div>
                     <div class="thumbnail">
-                        <img src="/img/camp/20.jpg" alt="Мініатюра 20" onclick="changePhoto('/img/camp/20.jpg')">
+                        <img src="/img/camp/20.jpg" alt="Мініатюра 20" onclick="changePhoto_c('/img/camp/20.jpg')">
                     </div>
                     <div class="thumbnail">
-                        <img src="/img/camp/21.jpg" alt="Мініатюра 21" onclick="changePhoto('/img/camp/21.jpg')">
+                        <img src="/img/camp/21.jpg" alt="Мініатюра 21" onclick="changePhoto_c('/img/camp/21.jpg')">
                     </div>
                     <div class="thumbnail">
-                        <img src="/img/camp/22.jpg" alt="Мініатюра 22" onclick="changePhoto('/img/camp/22.jpg')">
+                        <img src="/img/camp/22.jpg" alt="Мініатюра 22" onclick="changePhoto_c('/img/camp/22.jpg')">
                     </div>
                     <div class="thumbnail">
-                        <img src="/img/camp/23.jpg" alt="Мініатюра 23" onclick="changePhoto('/img/camp/23.jpg')">
+                        <img src="/img/camp/23.jpg" alt="Мініатюра 23" onclick="changePhoto_c('/img/camp/23.jpg')">
                     </div>
                     <div class="thumbnail">
-                        <img src="/img/camp/24.jpg" alt="Мініатюра 24" onclick="changePhoto('/img/camp/24.jpg')">
+                        <img src="/img/camp/24.jpg" alt="Мініатюра 24" onclick="changePhoto_c('/img/camp/24.jpg')">
                     </div>
                     <div class="thumbnail">
-                        <img src="/img/camp/25.jpg" alt="Мініатюра 25" onclick="changePhoto('/img/camp/25.jpg')">
+                        <img src="/img/camp/25.jpg" alt="Мініатюра 25" onclick="changePhoto_c('/img/camp/25.jpg')">
                     </div>
                     <div class="thumbnail">
-                        <img src="/img/camp/26.jpg" alt="Мініатюра 26" onclick="changePhoto('/img/camp/26.jpg')">
+                        <img src="/img/camp/26.jpg" alt="Мініатюра 26" onclick="changePhoto_c('/img/camp/26.jpg')">
                     </div>
                     <div class="thumbnail">
-                        <img src="/img/camp/27.jpg" alt="Мініатюра 27" onclick="changePhoto('/img/camp/27.jpg')">
+                        <img src="/img/camp/27.jpg" alt="Мініатюра 27" onclick="changePhoto_c('/img/camp/27.jpg')">
                     </div>
                     <div class="thumbnail">
-                        <img src="/img/camp/28.jpg" alt="Мініатюра 28" onclick="changePhoto('/img/camp/28.jpg')">
+                        <img src="/img/camp/28.jpg" alt="Мініатюра 28" onclick="changePhoto_c('/img/camp/28.jpg')">
                     </div>
                     <div class="thumbnail">
-                        <img src="/img/camp/29.jpg" alt="Мініатюра 29" onclick="changePhoto('/img/camp/29.jpg')">
+                        <img src="/img/camp/29.jpg" alt="Мініатюра 29" onclick="changePhoto_c('/img/camp/29.jpg')">
                     </div>
                     <div class="thumbnail">
-                        <img src="/img/camp/30.jpg" alt="Мініатюра 30" onclick="changePhoto('/img/camp/30.jpg')">
+                        <img src="/img/camp/30.jpg" alt="Мініатюра 30" onclick="changePhoto_c('/img/camp/30.jpg')">
                     </div>
                     <div class="thumbnail">
-                        <img src="/img/camp/31.jpg" alt="Мініатюра 31" onclick="changePhoto('/img/camp/31.jpg')">
+                        <img src="/img/camp/31.jpg" alt="Мініатюра 31" onclick="changePhoto_c('/img/camp/31.jpg')">
                     </div>
                     <div class="thumbnail">
-                        <img src="/img/camp/32.jpg" alt="Мініатюра 32" onclick="changePhoto('/img/camp/32.jpg')">
+                        <img src="/img/camp/32.jpg" alt="Мініатюра 32" onclick="changePhoto_c('/img/camp/32.jpg')">
                     </div>
                     <div class="thumbnail">
-                        <img src="/img/camp/33.jpg" alt="Мініатюра 33" onclick="changePhoto('/img/camp/33.jpg')">
+                        <img src="/img/camp/33.jpg" alt="Мініатюра 33" onclick="changePhoto_c('/img/camp/33.jpg')">
                     </div>
                     <div class="thumbnail">
-                        <img src="/img/camp/34.jpg" alt="Мініатюра 34" onclick="changePhoto('/img/camp/34.jpg')">
+                        <img src="/img/camp/34.jpg" alt="Мініатюра 34" onclick="changePhoto_c('/img/camp/34.jpg')">
                     </div>
                     <div class="thumbnail">
-                        <img src="/img/camp/35.jpg" alt="Мініатюра 35" onclick="changePhoto('/img/camp/35.jpg')">
+                        <img src="/img/camp/35.jpg" alt="Мініатюра 35" onclick="changePhoto_c('/img/camp/35.jpg')">
                     </div>
                     <div class="thumbnail">
-                        <img src="/img/camp/36.jpg" alt="Мініатюра 36" onclick="changePhoto('/img/camp/36.jpg')">
+                        <img src="/img/camp/36.jpg" alt="Мініатюра 36" onclick="changePhoto_c('/img/camp/36.jpg')">
                     </div>
                     <div class="thumbnail">
-                        <img src="/img/camp/37.jpg" alt="Мініатюра 37" onclick="changePhoto('/img/camp/37.jpg')">
+                        <img src="/img/camp/37.jpg" alt="Мініатюра 37" onclick="changePhoto_c('/img/camp/37.jpg')">
                     </div>
 
                 </div>
             </div>
     </container>
     <script>
-        function changePhoto(src) {
+        function changePhoto_c(src) {
             document.getElementById('currentPhoto1').src = src;
         }
     </script>
-    {{!-- ------------------------------------------ --}}
+    {{!-- --------------CONTACTS---------------------------- --}}
+    <div class="header-text gradient-text">КОНТАКТИ:</div>
 
+    <div class="contact-container">
+        <div class="map-container">
+            <iframe id="googleMap"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2413.418920043794!2d30.593739716380313!3d50.44910388439328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfedb7fe150d%3A0xe0e1147de7c7b020!2z0YPQuy4g0KDQsNC40YHRiyDQntC60LjQv9C90L7QuSwgNiwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1721641614797!5m2!1sru!2sua"
+                width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+        </div>
+        <div class="contact-info">
+            <h2>Контакти</h2>
+            <p>Адреса: вулиця Тараса Шевченка, 123, Київ, Україна</p>
+            <p>Телефон: +380 44 123 4567</p>
+            <p>Email: info@company.com</p>
+        </div>
+    </div>
+    <script>
+        document.querySelector('.map-container').addEventListener('click', function () {
+            window.open('https://maps.app.goo.gl/XJUvu8nJoEzdfhRm8', '_blank');
+        });
+    </script>
+    {{!-- ------------------------------------------ --}}
 </main>
 
 
