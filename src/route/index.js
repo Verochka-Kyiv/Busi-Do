@@ -41,12 +41,13 @@ router.get('/', function (req, res) {
       title: 'Клуб карате БУСІ ДО',
     },
     header: [
-      { text: 'ПРО КЛУБ', url: '' },
-      { text: 'НАШІ ТРЕНЕРИ', url: '' },
-      { text: 'РОЗКЛАД', url: '' },
-      { text: 'СПОРТИВНІ ЗБОРИ', url: '' },
-      { text: 'ГАЛЕРЕЯ', url: '' },
-      { text: 'КОНТАКТИ', url: '' },
+      { text: 'ПРО КЛУБ', url: '#abouteus' },
+      { text: 'НАШІ ТРЕНЕРИ', url: '#trainers' },
+      { text: 'ПРОПОЗИЦІЇ', url: '#service' },
+      { text: 'СПОРТИВНІ ЗБОРИ', url: '#sportcamp' },
+      { text: 'ГАЛЕРЕЯ', url: '#galery' },
+      { text: 'НАШІ ЧЕМПІОНИ', url: '#champ' },
+      { text: 'КОНТАКТИ', url: '#address' },
     ],
     welcome: [
       {
@@ -198,7 +199,7 @@ router.get('/', function (req, res) {
     ],
     blackfooter: {
       text: 'This site was made by Verochka',
-      name: 'Karate Club "Busi-Do" 2023',
+      name: 'Karate Club "Busi-Do" 2024',
       pic: '',
     },
   })
