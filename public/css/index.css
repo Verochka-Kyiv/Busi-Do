@@ -3,16 +3,26 @@
 }
 html {
   max-width: 1560px;
-  display: flex;
+  margin: 0 auto; /* Центрує вміст HTML по горизонталі */
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+}
+body {
+  margin: 0; /* Прибирає відступи по краях сторінки */
 }
 main {
   background-color: black;
   color: white; /* Білий текст */
   font-family: Arial, sans-serif; /* Встановлення шрифта */
   scroll-behavior: smooth; /* плавна прокрутка */
+
+  display: flex; /* Використання Flexbox для вирівнювання */
+  flex-direction: column; /* Елементи розташовані вертикально */
+  align-items: center; /* Вирівнювання по центру горизонтально */
+  min-height: 100vh; /* Мінімальна висота, щоб заповнити весь екран */
 }
+
 section {
   padding: 2px 2px;
 }
@@ -21,20 +31,49 @@ section {
   height: 60px;
   width: 600px;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центрує елементи по горизонталі */
+  justify-content: center; /* Центрує елементи по вертикалі (опційно) */
 }
 .whiteline {
   background-color: white;
   height: 3px;
   width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центрує елементи по горизонталі */
+  justify-content: center; /* Центрує елементи по вертикалі (опційно) */
 }
 .whiteline1 {
   background-color: white;
   height: 1px;
   width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центрує елементи по горизонталі */
+  justify-content: center; /* Центрує елементи по вертикалі (опційно) */
 }
 
+.scroll-top-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: url('path/to/your/image.png') no-repeat center
+    center;
+  background-size: cover;
+  border: none;
+  width: 50px; /* Встанови потрібний розмір */
+  height: 50px; /* Встанови потрібний розмір */
+  cursor: pointer;
+  display: none; /* Сховати кнопку за замовчуванням */
+  z-index: 1000; /* Щоб кнопка була поверх інших елементів */
+}
+.scroll-top-btn:focus {
+  outline: none; /* Прибрати рамку при фокусуванні */
+}
 .gradient-text {
-  font-size: 50px;
+  font-size: 28px;
   font-weight: bold;
   background: linear-gradient(
     90deg,
@@ -46,6 +85,19 @@ section {
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.sectionName {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin: 12px 12px 0px 12px;
+  background: rgb(0, 0, 0);
+  color: #ff1d11;
+}
+.header-text {
+  font-size: 28px;
+  text-align: center;
+  margin: 32px 12px 8px 12px;
 }
 .head {
   display: flex;
@@ -167,11 +219,7 @@ video {
   max-width: 100%;
   height: auto;
 }
-.header-text {
-  font-size: 28px;
-  text-align: center;
-  margin: 32px 12px 8px 12px;
-}
+
 /* ***************************************** */
 .listtrainers {
   display: flex;
@@ -188,18 +236,27 @@ video {
   width: 100%; /* Ширина 100% для кожного елемента */
   margin-bottom: 20px; /* Додаємо відступ між елементами */
 }
-
+.item-left {
+  justify-content: flex-end;
+}
+.item-right {
+  justify-content: flex-start;
+}
 .item-left .photo,
 .item-right .photo {
   max-width: 40%; /* Обмежуємо ширину зображення */
   max-height: 60%; /* Обмежуємо висоту зображення */
   object-fit: cover; /* Зберігаємо пропорції зображення */
 }
-
-.item-left .text,
 .item-right .text {
   padding-left: 20px; /* Додаємо відступ між фото і текстом */
   width: 50%; /* Ширина колонки з текстом */
+  align-items: flex-end;
+}
+.item-left .text {
+  padding-left: 20px; /* Додаємо відступ між фото і текстом */
+  width: 50%; /* Ширина колонки з текстом */
+  align-items: flex-start;
 }
 .item-right {
   flex-direction: row-reverse; /* Розташовуємо зображення праворуч */
@@ -207,16 +264,19 @@ video {
 .train-header {
   font-size: 2em; /* Збільшуємо розмір шрифту для заголовка */
   font-weight: bold; /* Робимо шрифт жирним */
+  text-align: center;
 }
 
 .train-status {
   font-size: 1.8em; /* Збільшуємо розмір шрифту для статусу */
   color: #888585; /* Змінюємо колір тексту для статусу */
+  text-align: center;
 }
 
 .info {
   margin-top: 10px; /* Додаємо верхній відступ для додаткової інформації */
 }
+
 .info li {
   position: relative; /* Встановлюємо відносне позиціонування для маркерів */
   margin-bottom: 10px;
@@ -360,11 +420,11 @@ video {
 }
 
 .left-arrow {
-  left: 180px;
+  left: -60px;
 }
 
 .right-arrow {
-  right: 180px;
+  right: -60px;
 }
 
 /* Зміна курсора при натисканні */
@@ -372,16 +432,28 @@ video {
   cursor: grabbing;
 }
 /* ----------------------------------------------------- */
+#abouteus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 .slideshow-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 80vw;
-
-  max-width: 800px;
+  /* ++++ */
+  max-width: 80%;
+  width: 800px;
   height: 640px; /* Додано фіксовану висоту для контейнера */
   overflow: hidden;
+  /* margin: 0 auto; */
+  /* width: 80vw; */
+  padding: 12px;
+  margin-bottom: 0;
 }
 
 .slide {
@@ -391,20 +463,27 @@ video {
   opacity: 0;
   transition: opacity 1s ease-in-out;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 100%;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
 }
 
 .slide img {
-  width: 50%;
+  width: 100%;
   height: auto;
+  max-width: 300px; /* Задає максимальну ширину зображення */
 }
 .slide .column {
   flex: 1;
   padding: 0 20px;
 }
-
+.slide .column h3 {
+  padding-bottom: 12px;
+  color: #ed5516;
+}
 .active {
   opacity: 1;
   z-index: 1;
@@ -412,8 +491,8 @@ video {
 
 .next-btn {
   display: block;
-  margin: 20px auto;
-  padding: 10px 20px;
+  margin: 0px auto;
+  padding: 4px 20px;
   font-size: 16px;
   color: #fff;
   background-color: black;
@@ -437,14 +516,14 @@ video {
 /* ----------------------------------------------------- */
 .frame-container {
   position: relative;
-  max-width: 100%;
+  max-width: 800px;
   margin: 0 auto;
   text-align: center;
 }
 
 .frame {
   display: none;
-  padding: 20px;
+  padding: 16px;
 }
 
 .frame.active {
@@ -472,29 +551,41 @@ video {
 
 /* ----------------------------------------------------- */
 .contact-container {
-  width: 800px;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 660px;
+
   flex-wrap: wrap;
   padding: 16px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .map-container {
   flex: 1;
-  width: 80px;
-  height: 160px;
+  max-width: 300px;
+  height: 200px;
+  align-items: center;
+  /* width: 80px;
+  height: 160px; */
   margin-right: 16px;
   cursor: pointer;
 }
 
 .contact-info {
   flex: 1;
-  min-width: 520px;
+  min-width: 300px;
 }
 
-.contact-info h2 {
+.contact-info h3 {
   margin-top: 0;
 }
 .schedule {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 2px;
   margin: 2px;
 }
@@ -518,6 +609,9 @@ video {
   font-size: smaller;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* ----------------------------------------------------- */
 @media (max-width: 768px) {

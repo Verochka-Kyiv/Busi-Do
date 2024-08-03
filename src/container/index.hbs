@@ -16,18 +16,7 @@
     </section>
 
     <script>
-        //  const menuItems = [
-        //       { text: 'ПРО КЛУБ', url: '#abouteus' },
-        //       { text: 'НАШІ ТРЕНЕРИ', url: '#trainers' },
-        //      { text: 'ПРОПОЗИЦІЇ', url: '#service' },
-        //       { text: 'СПОРТИВНІ ЗБОРИ', url: '#sportcamp' },
-        //       { text: 'ГАЛЕРЕЯ', url: '#galery' },
-        //
-        //       { text: 'КОНТАКТИ', url: '#address' },
-        //     ];
-
         const navMenu = document.getElementById('navMenu');
-
         menuItems.forEach(item => {
             const link = document.createElement('a');
             link.href = item.url;
@@ -35,7 +24,6 @@
             navMenu.appendChild(link);
         });
     </script>
-
 
     {{!-- -------------WELCOME----------------------------- --}}
     <div class="welcome-container">
@@ -55,18 +43,17 @@
     {{!-- ---------------VIDEO--------------------------- --}}
 
     <div class="video-section">
-        <div class="header-text gradient-text1">ВІТАЄМО!</div>
+        <div class="sectionName">ВІТАЄМО!</div>
         <video controls>
             <source src="/videos/karatekid.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
-
+    <div class="line"></div>
     {{!-- -----------OUR TRAINERS------------------------------- --}}
     <section id="trainers">
-        <div class="header-text gradient-text ">КОМАНДА НАШИХ ТРЕНЕРІВ</div>
+        <div class="sectionName">КОМАНДА НАШИХ ТРЕНЕРІВ</div>
         <div class="listtrainers">
-
             <div class="item-left">
                 <img src="/img/trainers/mi.jpg" alt=`Head of the "BUSI-DO" Club` class="photo">
                 <div class="text">
@@ -85,7 +72,7 @@
                 </div>
             </div>
             <div class="item-right">
-                <img src="/img/trainers/ai.jpg" alt=`Головний суддя Клубу "БУСІ-ДО" ` class="photo">
+                <img src="/img/trainers/ai1.jpg" alt=`Головний суддя Клубу "БУСІ-ДО" ` class="photo">
                 <div class="text">
                     <p class="train-header">старший тренер</p>
                     <p class="train-header">Яковлева Альона Ігорівна</p>
@@ -105,54 +92,88 @@
 
             </div>
             <div class="item-left">
-                <img src="" alt="" class="photo">
+                <img src="/img/trainers/mi.jpg" alt=`Head of the "BUSI-DO" Club` class="photo">
                 <div class="text">
-                    <p class="train-header">Асистент тренера</p>
-                    <p class="train-header">Кто то ктотович</p>
-                    <p class="train-status"></p>
+                    <p class="train-header">старший тренер</p>
+                    <p class="train-header">Яковлев Максим Ігорович</p>
+                    <p class="train-status">Голова Клубу "БУСІ-ДО"</p>
                     <ul class="info">
-                        <li>займається карате з 2016року</li>
-                        <li>призерка змагань</li>
-                        <li></li>
-                        <li></li>
+                        <li>старший тренер по карате 2-й Дан</li>
+                        <li>почав займатися карате-до шотокан у 1994 р</li>
+                        <li>тренерський досвід з 2006 р</li>
+                        <li>кандидат у майстри спорту</li>
+                        <li>багаторазовий чемпіон м.Києва та України</li>
+                        <li>Член Київської суддівської колегії</li>
+                        <li>закінчив КМУ імені Б.Д. Грінченка, спеціальність: фізичне виховання</li>
                     </ul>
                 </div>
             </div>
             <div class="item-right">
-                <img src="" alt="" class="photo">
+                <img src="/img/trainers/ai1.jpg" alt=`Головний суддя Клубу "БУСІ-ДО" ` class="photo">
                 <div class="text">
-                    <p class="train-header">Асистент тренера</p>
-                    <p class="train-header">Кто то ктотович</p>
-                    <p class="train-status"></p>
+                    <p class="train-header">старший тренер</p>
+                    <p class="train-header">Яковлева Альона Ігорівна</p>
+                    <p class="train-status">Головний суддя</p>
+                    <p class="train-status">Клубу "БУСІ-ДО"</p>
                     <ul class="info">
-                        <li>займається карате з 2016року</li>
-                        <li>призерка змагань</li>
-                        <li></li>
-                        <li></li>
+                        <li>старший тренер по карате 2-й Дан</li>
+                        <li>почала займатися карате-до шотокан в 1991 р.</li>
+                        <li>тренерський досвід із 2003 р.</li>
+                        <li>кандидат у майстри спорту</li>
+                        <li>багаторазова чемпіонка м.Києва та України</li>
+                        <li>Член Київської суддівської колегії</li>
+                        <li>закінчила КНТЕУ, спеціальність: магістр права, юрист</li>
+                        <li>закінчила НПУ імені М.П. Драгоманова, спеціальність: фізичне виховання</li>
                     </ul>
                 </div>
 
             </div>
             <div class="item-left">
-                <img src="" alt="" class="photo">
+                <img src="/img/trainers/mi.jpg" alt=`Head of the "BUSI-DO" Club` class="photo">
                 <div class="text">
-                    <p class="train-header">Асистент тренера</p>
-                    <p class="train-header">Кто то ктотович</p>
-                    <p class="train-status"></p>
+                    <p class="train-header">старший тренер</p>
+                    <p class="train-header">Яковлев Максим Ігорович</p>
+                    <p class="train-status">Голова Клубу "БУСІ-ДО"</p>
                     <ul class="info">
-                        <li>займається карате з 2016року</li>
-                        <li>призерка змагань</li>
-                        <li></li>
-                        <li></li>
+                        <li>старший тренер по карате 2-й Дан</li>
+                        <li>почав займатися карате-до шотокан у 1994 р</li>
+                        <li>тренерський досвід з 2006 р</li>
+                        <li>кандидат у майстри спорту</li>
+                        <li>багаторазовий чемпіон м.Києва та України</li>
+                        <li>Член Київської суддівської колегії</li>
+                        <li>закінчив КМУ імені Б.Д. Грінченка, спеціальність: фізичне виховання</li>
                     </ul>
                 </div>
             </div>
-
         </div>
     </section>
+    <div class="line"></div>
+    {{!-- -------Кнопка прокрутки вгору------------------- --}}
+    <button id="scrollTopBtn" class="scroll-top-btn">
+        <img src="path/to/your/up.png" alt="Scroll to Top">
+    </button>
+    <script>
+        // Отримати кнопку
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+        // Показати/сховати кнопку в залежності від прокрутки
+        window.onscroll = function () {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollTopBtn.style.display = 'block';
+            } else {
+                scrollTopBtn.style.display = 'none';
+            }
+        };
+
+        // При натисканні прокрутити до верху
+        scrollTopBtn.onclick = function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    </script>
+
     {{!-- -----------SERVICES------------------------------- --}}
     <section id="service">
-        <div class="header-text gradient-text">НАШІ СПОРТИВНІ ПРОПОЗИЦІЇ:</div>
+        <div class="sectionName">НАШІ СПОРТИВНІ ПРОПОЗИЦІЇ:</div>
         <div class="services">
             <!-- Перший елемент -->
             <div class="service-item">
@@ -209,10 +230,10 @@
             <p>Більш детальну інформацію можна отримати за телефонами вказаними на сайті.</p>
         </div>
     </section>
-
+    <div class="line"></div>
     {{!-- ---------------PHOTO MOMENTS--------------------------- --}}
     <section id="galery">
-        <div class="header-text gradient-text">ФОТО: Спортивні моменти</div>
+        <div class="sectionName">ФОТО: Спортивні моменти</div>
         <container class="gall">
             <div class="gallery">
                 <div class="main-photo">
@@ -350,9 +371,10 @@
             }
         </script>
     </section>
+    <div class="line"></div>
     {{!-- ---------------OUR CHAMPIONS--------------------------- --}}
     <section id="champ">
-        <div class="header-text gradient-text">НАШІ ЧЕМПІОНИ:</div>
+        <div class="sectionName">НАШІ ЧЕМПІОНИ:</div>
         <div class="gallery-container">
             <img src="/svg/ar_l.jpg" class="arrow left-arrow" id="left-arrow" alt="стрілка вліво">
             <div class="photo-gallery" id="photo-gallery">
@@ -363,7 +385,7 @@
 
         <script>
             const photos = [
-                // Список зображень
+                /*Список зображень*/
                 '/img/Champions/1.jpg', '/img/Champions/2.jpg', '/img/Champions/3.jpg', '/img/Champions/4.jpg', '/img/Champions/5.jpg',
                 '/img/Champions/6.jpg', '/img/Champions/7.jpg', '/img/Champions/8.jpg', '/img/Champions/9.jpg', '/img/Champions/10.jpg',
                 '/img/Champions/11.jpg', '/img/Champions/ChampUkraine.jpg', '/img/Champions/group1.jpg', '/img/Champions/medals.jpg', '/img/Champions/trainers1.jpg',
@@ -386,31 +408,28 @@
             }
 
             document.getElementById('left-arrow').addEventListener('click', () => {
-                if (currentIndex > 0) {
-                    currentIndex--;
-                    renderPhoto();
-                }
+
+                currentIndex = (currentIndex > 0) ? currentIndex - 1 : photos.length - 1;
+                renderPhoto();
             });
 
             document.getElementById('right-arrow').addEventListener('click', () => {
-                if (currentIndex < photos.length - 1) {
-                    currentIndex++;
-                    renderPhoto();
-                }
+                currentIndex = (currentIndex < photos.length - 1) ? currentIndex + 1 : 0;
+                renderPhoto();
             });
 
             // Початкове відображення фото
             renderPhoto();
         </script>
     </section>
-
+    <div class="line"></div>
     {{!-- --------ABOUT---------------------------------- --}}
     <section id="abouteus">
-        <div class="header-text gradient-text">ПРО КЛУБ:</div>
+        <div class="sectionName">ПРО КЛУБ:</div>
         <div class="slideshow-container">
             <div class="slide active">
                 <div class="column">
-                    <h2>Засновник клубу - ЯКОВЛЕВ ІГОР ЮРІЙОВИЧ</h2>
+                    <h3>Засновник клубу - ЯКОВЛЕВ ІГОР ЮРІЙОВИЧ</h3>
                     <img src="/img/about/iuyakovlev.jpg" alt="Засновник клубу І.Ю.Яковлев">
                 </div>
                 <div class="column">
@@ -431,8 +450,8 @@
             </div>
             <div class="slide">
                 <div class="column">
-                    <h2>Дитяча громадська організація
-                        «Спортивно-оздоровчий клуб Бусі-До»</h2>
+                    <h3>Дитяча громадська організація
+                        «Спортивно-оздоровчий клуб Бусі-До»</h3>
                     <img src="/img/about/logo_busi_do_UKR_white_letters.png" alt="Клуб Бусі До">
                 </div>
                 <div class="column">
@@ -450,8 +469,8 @@
             </div>
             <div class="slide">
                 <div class="column">
-                    <h2>​Дитяча громадська організація
-                        «Спортивно-оздоровчий клуб Бусі-До»</h2>
+                    <h3>​Дитяча громадська організація
+                        «Спортивно-оздоровчий клуб Бусі-До»</h3>
                     <img src="/img/about/logo_busi_do_UKR_white_letters.png" alt="Клуб Бусі До">
                 </div>
                 <div class="column">
@@ -469,11 +488,11 @@
             </div>
             <div class="slide">
                 <div class="column">
-                    <h2>Основні Цілі та Завдання Нашого Клубу:</h2>
+                    <h3>Основні Цілі та Завдання Нашого Клубу:</h3>
                     <img src="/img/about/logo_busi_do_UKR_white_letters.png" alt="Клуб Бусі До">
                 </div>
                 <div class="column">
-                    <p> 1. Молодь на хвилі здорового життя: Ми прагнемо залучити молодь до активного та здорового
+                    <p>1. Молодь на хвилі здорового життя: Ми прагнемо залучити молодь до активного та здорового
                         способу
                         життя, уникати тютюну, алкоголю, наркотиків та інших шкідливих звичок.</p>
                     <p>2. Фізична сила в єднанні: Наша мета - зміцнити загальний фізичний стан учнів клубу, підвищити їх
@@ -488,7 +507,7 @@
             </div>
             <div class="slide">
                 <div class="column">
-                    <h2>Основні Цілі та Завдання Нашого Клубу:</h2>
+                    <h3>Основні Цілі та Завдання Нашого Клубу:</h3>
                     <img src="/img/about/logo_busi_do_UKR_white_letters.png" alt="Клуб Бусі До">
                 </div>
                 <div class="column">
@@ -512,9 +531,8 @@
                 </div>
             </div>
         </div>
-        <button class="next-btn">ДАЛІ</button>
+        <button class="next-btn">Читати далі ...</button>
         <script>
-
             let currentSlideIndex = 0;
             const slides = document.querySelectorAll('.slideshow-container .slide');
             const totalSlides = slides.length;
@@ -535,9 +553,10 @@
             showSlide(currentSlideIndex);
         </script>
     </section>
+    <div class="line"></div>
     {{!-- -------------SPORT CAMP----------------------------- --}}
     <section id="sportcamp">
-        <div class="header-text gradient-text">СПОРТИВНІ ЗБОРИ:</div>
+        <div class="sectionName">СПОРТИВНІ ЗБОРИ:</div>
         <div class="frame-container">
             <div class="frame active">
                 <p>​Морські хвилі, що розбиваються об берег, солоний присмак морського повітря, нескінченна смуга піску,
@@ -750,10 +769,10 @@
             }
         </script>
     </section>
-
+    <div class="line"></div>
     {{!-- --------------CONTACTS---------------------------- --}}
     <section id="address">
-        <div class="header-text gradient-text">КОНТАКТИ:</div>
+        <div class="sectionName">КОНТАКТИ:</div>
 
         <div class="contact-container">
             <div class="map-container">
@@ -774,7 +793,8 @@
             <p class="schedule">ПН. 15:00 - 16:30;  16:30 - 18:00</p>
             <p class="schedule">СР. 15:00 - 16:30;  16:30 - 18:00</p>
             <p class="schedule">ПТ. 15:00 - 16:30;  16:30 - 18:00</p>
-            <p>Подробиці уточнюйте за телефоном: <a class="welcome-mob" href="tel:+380939219393">+380 93 921 93 93</a>
+            <p class="schedule">Подробиці уточнюйте за телефоном: <a class="welcome-mob" href="tel:+380939219393">+380
+                    93 921 93 93</a>
             </p>
 
         </div>
@@ -806,7 +826,8 @@
             <p class="schedule">ПН. 15-00 - 16:30;  18:30 - 20:00</p>
             <p class="schedule">СР. 15-00 - 16:30;  18:30 - 20:00</p>
             <p class="schedule">ПТ. 15-00 - 16:30;  18:30 - 20:00</p>
-            <p>Подробиці уточнюйте за телефонами: <br> <a class="welcome-mob" href="tel:+380939219393">+380 93 921 93
+            <p class="schedule">Подробиці уточнюйте за телефонами: <br> <a class="welcome-mob"
+                    href="tel:+380939219393">+380 93 921 93
                     93</a>
                 <br> <a class="welcome-mob" href="tel:+380632413351">+380 63 241 33 51</a>
             </p>
@@ -842,7 +863,8 @@
             <p class="schedule">ЧТ. 16:00 - 18:00; 18:00 - 20:00</p>
             <p class="schedule">ПТ. 17:00 - 18:30;  18:30 - 20:00</p>
             <p class="schedule">СБ. 10:00 - 12:00; 12:00 - 14:00</p>
-            <p>Подробиці уточнюйте за телефоном: <a class="welcome-mob" href="tel:+380632413351">+380 63 241 33 51</a>
+            <p class="schedule">Подробиці уточнюйте за телефоном: <a class="welcome-mob" href="tel:+380632413351">+380
+                    63 241 33 51</a>
             </p>
 
         </div>
