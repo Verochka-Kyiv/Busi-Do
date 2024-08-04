@@ -59,18 +59,29 @@ section {
   position: fixed;
   bottom: 20px;
   left: 20px;
-  background: url('path/to/your/image.png') no-repeat center
-    center;
+
   background-size: cover;
   border: none;
-  width: 50px; /* Встанови потрібний розмір */
-  height: 50px; /* Встанови потрібний розмір */
+  width: 50px;
+  height: 50px;
+
   cursor: pointer;
   display: none; /* Сховати кнопку за замовчуванням */
   z-index: 1000; /* Щоб кнопка була поверх інших елементів */
+  transition: opacity 0.3s ease; /* Додає плавну зміну прозорості */
 }
+.scroll-top-btn.blink {
+  opacity: 0.5; /* Зменшити прозорість при натисканні */
+}
+.scroll-top-btn img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+
 .scroll-top-btn:focus {
   outline: none; /* Прибрати рамку при фокусуванні */
+  opacity: 0.5; /* Зменшити прозорість при натисканні */
 }
 .gradient-text {
   font-size: 28px;
@@ -156,14 +167,14 @@ section {
   margin: 0 auto; /* Центрування на сторінці */
   padding: 8px;
   /* background-color: #f0f0f0; Фоновий колір контейнера */
-  background: rgb(0, 0, 0);
+
   background: linear-gradient(
     90deg,
-    rgba(0, 0, 0, 1) 11%,
-    rgba(255, 30, 16, 1) 40%,
-    rgba(255, 30, 16, 1) 50%,
-    rgba(255, 30, 16, 1) 60%,
-    rgba(0, 0, 0, 1) 89%
+    rgba(0, 0, 0, 1) 15%,
+    rgba(255, 30, 16, 1) 30%,
+    rgba(255, 29, 17, 1) 50%,
+    rgba(255, 30, 16, 1) 70%,
+    rgba(0, 0, 0, 1) 85%
   );
 }
 
@@ -172,6 +183,12 @@ section {
   flex: 1; /* Розтягнення блоків ліворуч і праворуч на однакове простір */
   text-align: center; /* Вирівнювання тексту по центру */
 }
+.welcome-left {
+  padding-right: 32px;
+}
+.welcome-right {
+  padding-left: 32px;
+}
 .welcome-mob {
   text-decoration: none;
   color: white;
@@ -179,7 +196,8 @@ section {
 .welcome-logo img {
   max-width: 160px; /* Максимальна ширина логотипу */
   max-height: 160px;
-  margin: 4px; /* Відступ між логотипом і текстом */
+  padding: 4px;
+  margin: 16px; /* Відступ між логотипом і текстом */
 }
 
 @media (max-width: 768px) {
@@ -210,7 +228,8 @@ a.welcome-mob:hover {
   justify-content: center; /* Вирівнюємо по вертикалі */
   align-items: center; /* Вирівнюємо по горизонталі */
   text-align: center;
-  margin-top: 20px;
+  margin: 20px 20px 32px 20px;
+  padding-bottom: 16px;
   max-width: 1200px;
   margin: 20px auto; /* Центруємо блок відео по горизонталі */
 }
@@ -218,6 +237,7 @@ a.welcome-mob:hover {
 video {
   max-width: 100%;
   height: auto;
+  padding-top: 24px;
 }
 
 /* ***************************************** */
@@ -294,6 +314,7 @@ video {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 24px;
   gap: 20px;
   color: white;
   background: linear-gradient(
@@ -319,7 +340,12 @@ video {
   height: auto;
   border-radius: 24px;
 }
-
+.service-item p {
+  text-align: center;
+}
+.service-item ul {
+  padding: 0;
+}
 .textfoot {
   margin-top: 20px;
   text-align: center;
@@ -390,6 +416,7 @@ video {
 /* ----------------------------------------------------- */
 .gallery-container {
   display: flex;
+  margin-top: 24px;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -480,10 +507,12 @@ video {
   flex: 1;
   padding: 0 20px;
 }
-.slide .column h3 {
+.slide .column h3,
+h4 {
   padding-bottom: 12px;
   color: #ed5516;
 }
+
 .active {
   opacity: 1;
   z-index: 1;
@@ -519,6 +548,7 @@ video {
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
+  margin-top: 16px;
 }
 
 .frame {
@@ -553,6 +583,7 @@ video {
 .contact-container {
   display: flex;
   flex-direction: row;
+  margin-top: 28px;
   justify-content: center;
   align-items: center;
   width: 660px;
@@ -589,7 +620,11 @@ video {
   padding: 2px;
   margin: 2px;
 }
-
+p > a {
+  padding: 32px;
+  font-size: large;
+  font-weight: bold;
+}
 .cr {
   width: 16px;
   height: 16px;
