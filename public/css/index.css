@@ -4,10 +4,8 @@
 html {
   max-width: 1560px;
   margin: 0 auto; /* Центрує вміст HTML по горизонталі */
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 }
+
 body {
   margin: 0; /* Прибирає відступи по краях сторінки */
 }
@@ -200,17 +198,6 @@ section {
   margin: 16px; /* Відступ між логотипом і текстом */
 }
 
-@media (max-width: 768px) {
-  .welcome-container {
-    flex-direction: column; /* Розміщення у стовпчик на малих екранах */
-  }
-
-  .welcome-left,
-  .welcome-right {
-    flex: unset; /* Скасувати розтягнення на малих екранах */
-    text-align: center; /* Вирівнювання тексту по центру */
-  }
-}
 a.welcome-mob {
   color: white; /* початковий колір тексту */
   transition: color 0.5s ease; /* тривалість анімації зміни кольору */
@@ -282,13 +269,13 @@ video {
   flex-direction: row-reverse; /* Розташовуємо зображення праворуч */
 }
 .train-header {
-  font-size: 2em; /* Збільшуємо розмір шрифту для заголовка */
+  font-size: 28px; /* Збільшуємо розмір шрифту для заголовка */
   font-weight: bold; /* Робимо шрифт жирним */
   text-align: center;
 }
 
 .train-status {
-  font-size: 1.8em; /* Збільшуємо розмір шрифту для статусу */
+  font-size: 20px; /* Збільшуємо розмір шрифту для статусу */
   color: #888585; /* Змінюємо колір тексту для статусу */
   text-align: center;
 }
@@ -625,6 +612,11 @@ p > a {
   font-size: large;
   font-weight: bold;
 }
+.foottel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .cr {
   width: 16px;
   height: 16px;
@@ -649,10 +641,49 @@ p > a {
   align-items: center;
 }
 /* ----------------------------------------------------- */
-@media (max-width: 768px) {
-  .item-left {
-    flex-direction: column; /* В колонку на маленьких екранах */
-    align-items: flex-start; /* Вирівнювання по лівому краю */
+/* -------------------------------------------- */
+/* -------------------------------------------- */
+/* Медіа-запити для адаптивного дизайну */
+
+/* Для планшетів */
+@media (min-width: 920px) and (max-width: 1180px) {
+  .sectionName {
+    font-size: 24px;
+  }
+  .header-text {
+    font-size: 20px;
+    text-align: center;
+    margin: 24px 8px 4px 8px;
+  }
+  .head {
+    display: flex;
+    justify-content: center; /* Горизонтальне центрування */
+    align-items: center; /* Вертикальне центрування */
+    height: 100%; /* Висота контейнера на всю висоту вікна */
+  }
+  .black-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; /* Розташувати кнопки з рівними відступами між ними */
+    gap: 8px;
+    width: 100%;
+    padding: 4px; /* Відступи навколо контейнера кнопок */
+  }
+
+  a .blbtn {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 4px; /* Відступи між кнопками */
+    padding: 8px 12px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center; /* Вирівнювання тексту по центру кнопки */
+    text-decoration: none; /* Відсутність підкреслення */
+    transition: background 0.03s ease; /* Плавний перехід фону */
   }
 
   .photo,
@@ -664,41 +695,967 @@ p > a {
     padding-left: 0; /* Відміняємо відступ між фото і текстом на маленьких екранах */
     margin-top: 20px; /* Додаємо відступ між фото і текстом */
   }
+  .welcome-logo img {
+    max-width: 120px; /* Максимальна ширина логотипу */
+    max-height: 120px;
+    padding: 4px;
+    margin: 16px; /* Відступ між логотипом і текстом */
+  }
+  .video-section {
+    display: flex; /* Додаємо flexbox */
+    flex-direction: column; /* Розташовуємо елементи вертикально */
+    justify-content: center; /* Вирівнюємо по вертикалі */
+    align-items: center; /* Вирівнюємо по горизонталі */
+    text-align: center;
+    margin: 12px 12px 16px 12px;
+    padding-bottom: 12px;
+    max-width: 800px;
+    margin: 16px auto; /* Центруємо блок відео по горизонталі */
+  }
+
+  video {
+    max-width: 100%;
+    height: auto;
+    padding-top: 12px;
+  }
+
+  /* ---------------------------------------- */
+}
+/* ----------------------------------------------------- */
+@media (min-width: 801px) and (max-width: 920px) {
+  .sectionName {
+    font-size: 18px;
+  }
+  .header-text {
+    font-size: 18px;
+    text-align: center;
+    margin: 24px 8px 4px 8px;
+  }
+  .head {
+    display: flex;
+    justify-content: center; /* Горизонтальне центрування */
+    align-items: center; /* Вертикальне центрування */
+    height: 100%; /* Висота контейнера на всю висоту вікна */
+  }
+  .black-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; /* Розташувати кнопки з рівними відступами між ними */
+    gap: 8px;
+    width: 100%;
+    padding: 4px; /* Відступи навколо контейнера кнопок */
+  }
+
+  a .blbtn {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 4px; /* Відступи між кнопками */
+    padding: 8px 12px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center; /* Вирівнювання тексту по центру кнопки */
+    text-decoration: none; /* Відсутність підкреслення */
+    transition: background 0.03s ease; /* Плавний перехід фону */
+  }
+
+  .photo,
+  .text {
+    width: 100%; /* Ширина 100% для кожного елемента в колонці */
+  }
+
+  .text {
+    padding-left: 0; /* Відміняємо відступ між фото і текстом на маленьких екранах */
+    margin-top: 16px; /* Додаємо відступ між фото і текстом */
+  }
+  .welcome-logo img {
+    max-width: 100px; /* Максимальна ширина логотипу */
+    max-height: 100px;
+    padding: 4px;
+    margin: 16px; /* Відступ між логотипом і текстом */
+  }
+  .video-section {
+    display: flex; /* Додаємо flexbox */
+    flex-direction: column; /* Розташовуємо елементи вертикально */
+    justify-content: center; /* Вирівнюємо по вертикалі */
+    align-items: center; /* Вирівнюємо по горизонталі */
+    text-align: center;
+    margin: 12px 12px 16px 12px;
+    padding-bottom: 12px;
+    max-width: 800px;
+    margin: 16px auto; /* Центруємо блок відео по горизонталі */
+  }
+
+  video {
+    max-width: 100%;
+    height: auto;
+    padding-top: 12px;
+  }
+  /*----------------------------------------------------*/
+  .listtrainers {
+    display: flex;
+    flex-direction: column; /* Розташовуємо елементи вертикально */
+    align-items: center; /* Вирівнюємо елементи по горизонталі */
+    max-width: 800px; /* Максимальна ширина контейнера */
+    margin: 0 auto; /* Центруємо контейнер по горизонталі */
+    padding: 16px; /* Додаємо внутрішні відступи */
+  }
+
+  div .item-left,
+  .item-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центруємо елементи по вертикалі */
+    width: 100%; /* Ширина 100% для кожного елемента */
+    margin-bottom: 16px; /* Додаємо відступ між елементами */
+  }
+
+  .item-left .photo,
+  .item-right .photo {
+    max-width: 40%; /* Обмежуємо ширину зображення */
+    max-height: 50%; /* Обмежуємо висоту зображення */
+    object-fit: cover; /* Зберігаємо пропорції зображення */
+  }
+  .item-right .text {
+    padding-left: 16px; /* Додаємо відступ між фото і текстом */
+    width: 50%; /* Ширина колонки з текстом */
+    align-items: flex-end;
+    font-size: 16px;
+  }
+  .item-left .text {
+    padding-left: 16px; /* Додаємо відступ між фото і текстом */
+    width: 50%; /* Ширина колонки з текстом */
+    align-items: flex-start;
+    font-size: 16px;
+  }
+  .item-right {
+    flex-direction: row-reverse; /* Розташовуємо зображення праворуч */
+  }
+  .train-header {
+    font-size: 18px; /* Збільшуємо розмір шрифту для заголовка */
+    font-weight: bold; /* Робимо шрифт жирним */
+    text-align: center;
+  }
+
+  .train-status {
+    font-size: 16px;
+    color: #888585; /* Змінюємо колір тексту для статусу */
+    text-align: center;
+  }
+
+  .info {
+    margin-top: 8px; /* Додаємо верхній відступ для додаткової інформації */
+    font-size: 14px;
+  }
+
+  .info li {
+    position: relative; /* Встановлюємо відносне позиціонування для маркерів */
+    margin-bottom: 8px;
+    padding-left: 12px; /* Додаємо відступ для маркерів */
+  }
+
+  .info li::before {
+    content: '-'; /* Встановлюємо символ для маркерів */
+    position: absolute;
+    left: 0;
+    color: white; /* Колір маркера */
+  }
 }
 
-/* -------------------------------------------- */
-/* Медіа-запити для адаптивного дизайну */
-
+/* ----------------------------------------------------- */
 /* Для мобільних пристроїв */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
+  .sectionName {
+    font-size: 16px;
+  }
+  .header-text {
+    font-size: 16px;
+    text-align: center;
+    margin: 20px 4px 2px 4px;
+  }
+  .head {
+    display: flex;
+    justify-content: center; /* Горизонтальне центрування */
+    align-items: center; /* Вертикальне центрування */
+    height: 100%; /* Висота контейнера на всю висоту вікна */
+  }
   .black-header {
-    flex-direction: column; /* Вертикальне розташування кнопок */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; /* Розташувати кнопки з рівними відступами між ними */
+    gap: 8px;
+    width: 100%;
+    padding: 2px; /* Відступи навколо контейнера кнопок */
   }
 
-  .blbtn {
-    width: 100%; /* Кнопки займають всю ширину контейнера */
-    margin: 5px 0; /* Відступи між кнопками */
+  a .blbtn {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 4px; /* Відступи між кнопками */
+    padding: 4px 8px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center; /* Вирівнювання тексту по центру кнопки */
+    text-decoration: none; /* Відсутність підкреслення */
+    transition: background 0.03s ease; /* Плавний перехід фону */
+  }
+
+  .photo,
+  .text {
+    width: 100%; /* Ширина 100% для кожного елемента в колонці */
+  }
+
+  .text {
+    padding-left: 0; /* Відміняємо відступ між фото і текстом на маленьких екранах */
+    margin-top: 12px; /* Додаємо відступ між фото і текстом */
+  }
+  .welcome-logo img {
+    max-width: 80px; /* Максимальна ширина логотипу */
+    max-height: 80px;
+    padding: 4px;
+    margin: 12px; /* Відступ між логотипом і текстом */
+  }
+  .video-section {
+    display: flex; /* Додаємо flexbox */
+    flex-direction: column; /* Розташовуємо елементи вертикально */
+    justify-content: center; /* Вирівнюємо по вертикалі */
+    align-items: center; /* Вирівнюємо по горизонталі */
+    text-align: center;
+    margin: 8px 8px 10px 8px;
+    padding-bottom: 8px;
+    max-width: 600px;
+    margin: 12px auto; /* Центруємо блок відео по горизонталі */
+  }
+
+  video {
+    max-width: 100%;
+    height: auto;
+    padding-top: 8px;
+  }
+  /*----------------------------------------------------*/
+  .listtrainers {
+    display: flex;
+    flex-direction: column; /* Розташовуємо елементи вертикально */
+    align-items: center; /* Вирівнюємо елементи по горизонталі */
+    max-width: 600px; /* Максимальна ширина контейнера */
+    margin: 0 auto; /* Центруємо контейнер по горизонталі */
+    padding: 12px; /* Додаємо внутрішні відступи */
+  }
+
+  div .item-left,
+  .item-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центруємо елементи по вертикалі */
+    width: 100%; /* Ширина 100% для кожного елемента */
+    margin-bottom: 12px; /* Додаємо відступ між елементами */
+  }
+
+  .item-left .photo,
+  .item-right .photo {
+    max-width: 40%; /* Обмежуємо ширину зображення */
+    max-height: 50%; /* Обмежуємо висоту зображення */
+    object-fit: cover; /* Зберігаємо пропорції зображення */
+  }
+  .item-right .text {
+    padding-left: 12px; /* Додаємо відступ між фото і текстом */
+    width: 50%; /* Ширина колонки з текстом */
+    align-items: flex-end;
+    font-size: 14px;
+  }
+  .item-left .text {
+    padding-left: 12px; /* Додаємо відступ між фото і текстом */
+    width: 50%; /* Ширина колонки з текстом */
+    align-items: flex-start;
+    font-size: 14px;
+  }
+
+  .train-header {
+    font-size: 14px; /* Збільшуємо розмір шрифту для заголовка */
+    font-weight: bold; /* Робимо шрифт жирним */
+    text-align: center;
+    padding: 2px;
+    margin: 2px;
+  }
+
+  .train-status {
+    font-size: 14px;
+    color: #888585; /* Змінюємо колір тексту для статусу */
+    text-align: center;
+  }
+
+  .info {
+    margin-top: 4px; /* Додаємо верхній відступ для додаткової інформації */
+    font-size: 12px;
+  }
+
+  .info li {
+    position: relative; /* Встановлюємо відносне позиціонування для маркерів */
+    margin-bottom: 4px;
+    padding-left: 8px; /* Додаємо відступ для маркерів */
+  }
+
+  .info li::before {
+    content: '-'; /* Встановлюємо символ для маркерів */
+    position: absolute;
+    left: 0;
+    color: white; /* Колір маркера */
+  }
+
+  .services {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 16px;
+    color: white;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 11%,
+      rgba(255, 30, 16, 1) 47%,
+      rgba(255, 30, 16, 1) 50%,
+      rgba(255, 30, 16, 1) 53%,
+      rgba(0, 0, 0, 1) 89%
+    );
+  }
+
+  .service-item {
+    width: 200px;
+    border: none;
+    padding: 4px;
+    text-align: center;
+    background-color: none;
+  }
+
+  .service-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 24px;
+  }
+  .service-item p {
+    text-align: center;
+  }
+  .service-item ul {
+    padding: 0;
+  }
+  .textfoot {
+    margin-top: 16px;
+    text-align: center;
+  }
+
+  .textfoot p {
+    margin: 4px 0;
+  }
+
+  .gall {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+  }
+  .gallery {
+    width: 80%;
+    max-width: 480px;
+  }
+
+  .main-photo img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+  }
+
+  .thumbnails {
+    display: flex;
+    justify-content: start;
+    margin-top: 12px;
+    overflow-x: auto;
+    width: 100%;
+    white-space: nowrap;
+  }
+  .thumbnail {
+    display: inline-block;
+    margin: 0 8px;
+  }
+  .thumbnails img {
+    width: 80px;
+    height: auto;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    transition: border-color 0.3s;
+  }
+
+  .gallery-container {
+    display: flex;
+    margin-top: 16px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+  }
+
+  .photo-gallery {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 480px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .photo-gallery img {
+    transition: transform 0.3s ease;
+    margin: 0 12px;
+    height: 320px;
+  }
+
+  .arrow {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+  }
+
+  .left-arrow {
+    left: -20px;
+  }
+
+  .right-arrow {
+    right: -20px;
+  }
+
+  .slideshow-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* ++++ */
+    max-width: 80%;
+    width: 600px;
+    height: 520px; /* Додано фіксовану висоту для контейнера */
+    overflow: hidden;
+    /* margin: 0 auto; */
+    /* width: 80vw; */
+    padding: 8px;
+    margin-bottom: 0;
+    font-size: 13px;
+  }
+
+  .slide {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+  }
+
+  .slide img {
+    width: 100%;
+    height: auto;
+    max-width: 280px; /* Задає максимальну ширину зображення */
+  }
+  .slide .column {
+    flex: 1;
+    padding: 0 16px;
+  }
+  .slide .column h3 {
+    padding-bottom: 8px;
+    color: #ed5516;
+    font-size: 16px;
+  }
+  .slide .column h4 {
+    padding-bottom: 8px;
+    color: #ed5516;
+    font-size: 13px;
+  }
+  .column p {
+    padding: 0;
+    margin: 2px;
+  }
+  .active {
+    opacity: 1;
+    z-index: 1;
+  }
+
+  .next-btn {
+    display: block;
+    margin: 0px auto;
+    padding: 4px 16px;
+    font-size: 14px;
+    color: #fff;
+    background-color: black;
+    border: 1px solid #b30000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+      border-color 0.3s ease;
   }
 }
-
-/* Для планшетів */
-@media (min-width: 601px) and (max-width: 1024px) {
+/* ----------------------------------------------------- */
+@media (max-width: 420px) {
+  .sectionName {
+    font-size: 16px;
+  }
+  .header-text {
+    font-size: 16px;
+    text-align: center;
+    margin: 20px 4px 2px 4px;
+  }
+  .head {
+    display: flex;
+    justify-content: center; /* Горизонтальне центрування */
+    align-items: center; /* Вертикальне центрування */
+    height: 100%; /* Висота контейнера на всю висоту вікна */
+  }
   .black-header {
-    flex-direction: row; /* Горизонтальне розташування кнопок */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; /* Розташувати кнопки з рівними відступами між ними */
+    gap: 4px;
+    width: 100%;
+    padding: 2px; /* Відступи навколо контейнера кнопок */
+    font-size: 14px;
   }
 
-  .blbtn {
-    width: auto; /* Кнопки займають свою природну ширину */
-  }
-}
+  a .blbtn {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 2px; /* Відступи між кнопками */
 
-/* Для настільних комп'ютерів */
-@media (min-width: 1025px) {
-  .black-header {
-    flex-direction: row; /* Горизонтальне розташування кнопок */
+    padding: 4px 8px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center; /* Вирівнювання тексту по центру кнопки */
+    text-decoration: none; /* Відсутність підкреслення */
+    transition: background 0.03s ease; /* Плавний перехід фону */
   }
 
-  .blbtn {
-    width: auto; /* Кнопки займають свою природну ширину */
+  .photo,
+  .text {
+    width: 100%; /* Ширина 100% для кожного елемента в колонці */
+  }
+
+  .text {
+    padding-left: 0; /* Відміняємо відступ між фото і текстом на маленьких екранах */
+    margin-top: 8px; /* Додаємо відступ між фото і текстом */
+  }
+  .welcome-logo img {
+    max-width: 80px; /* Максимальна ширина логотипу */
+    max-height: 80px;
+    padding: 4px;
+    margin: 12px; /* Відступ між логотипом і текстом */
+  }
+  .video-section {
+    display: flex; /* Додаємо flexbox */
+    flex-direction: column; /* Розташовуємо елементи вертикально */
+    justify-content: center; /* Вирівнюємо по вертикалі */
+    align-items: center; /* Вирівнюємо по горизонталі */
+    text-align: center;
+    margin: 8px 8px 10px 8px;
+    padding-bottom: 8px;
+    max-width: 360px;
+    margin: 12px auto; /* Центруємо блок відео по горизонталі */
+  }
+
+  video {
+    max-width: 100%;
+    height: auto;
+    padding-top: 8px;
+  }
+  /*----------------------------------------------------*/
+  .listtrainers {
+    display: flex;
+    flex-direction: column; /* Розташовуємо елементи вертикально */
+    align-items: center; /* Вирівнюємо елементи по горизонталі */
+    max-width: 600px; /* Максимальна ширина контейнера */
+    margin: 0 auto; /* Центруємо контейнер по горизонталі */
+    padding: 12px; /* Додаємо внутрішні відступи */
+  }
+
+  div .item-left,
+  .item-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центруємо елементи по вертикалі */
+    width: 100%; /* Ширина 100% для кожного елемента */
+    margin-bottom: 12px; /* Додаємо відступ між елементами */
+  }
+
+  .item-left .photo,
+  .item-right .photo {
+    max-width: 40%; /* Обмежуємо ширину зображення */
+    max-height: 50%; /* Обмежуємо висоту зображення */
+    object-fit: cover; /* Зберігаємо пропорції зображення */
+  }
+  .item-right .text {
+    padding-left: 12px; /* Додаємо відступ між фото і текстом */
+    width: 50%; /* Ширина колонки з текстом */
+    align-items: flex-end;
+    font-size: 14px;
+  }
+  .item-left .text {
+    padding-left: 12px; /* Додаємо відступ між фото і текстом */
+    width: 50%; /* Ширина колонки з текстом */
+    align-items: flex-start;
+    font-size: 14px;
+  }
+
+  .train-header {
+    font-size: 14px; /* Збільшуємо розмір шрифту для заголовка */
+    font-weight: bold; /* Робимо шрифт жирним */
+    text-align: center;
+    padding: 2px;
+    margin: 2px;
+  }
+
+  .train-status {
+    font-size: 14px;
+    color: #888585; /* Змінюємо колір тексту для статусу */
+    text-align: center;
+  }
+
+  .info {
+    margin-top: 4px; /* Додаємо верхній відступ для додаткової інформації */
+    font-size: 12px;
+  }
+
+  .info li {
+    position: relative; /* Встановлюємо відносне позиціонування для маркерів */
+    margin-bottom: 4px;
+    padding-left: 8px; /* Додаємо відступ для маркерів */
+  }
+
+  .info li::before {
+    content: '-'; /* Встановлюємо символ для маркерів */
+    position: absolute;
+    left: 0;
+    color: white; /* Колір маркера */
+  }
+
+  .services {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 16px;
+    color: white;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 11%,
+      rgba(255, 30, 16, 1) 47%,
+      rgba(255, 30, 16, 1) 50%,
+      rgba(255, 30, 16, 1) 53%,
+      rgba(0, 0, 0, 1) 89%
+    );
+  }
+
+  .service-item {
+    width: 200px;
+    border: none;
+    padding: 4px;
+    text-align: center;
+    background-color: none;
+  }
+
+  .service-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 24px;
+  }
+  .service-item p {
+    text-align: center;
+  }
+  .service-item ul {
+    padding: 0;
+  }
+  .textfoot {
+    margin-top: 16px;
+    text-align: center;
+  }
+
+  .textfoot p {
+    margin: 4px 0;
+  }
+
+  .gall {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+  }
+  .gallery {
+    width: 60%;
+    max-width: 420px;
+  }
+
+  .main-photo img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+  }
+
+  .thumbnails {
+    display: flex;
+    justify-content: start;
+    margin-top: 12px;
+    overflow-x: auto;
+    width: 100%;
+    white-space: nowrap;
+  }
+  .thumbnail {
+    display: inline-block;
+    margin: 0 8px;
+  }
+  .thumbnails img {
+    width: 80px;
+    height: auto;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    transition: border-color 0.3s;
+  }
+
+  .gallery-container {
+    display: flex;
+    margin-top: 16px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+  }
+
+  .photo-gallery {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 280px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .photo-gallery img {
+    transition: transform 0.3s ease;
+    margin: 0 8px;
+    height: 280px;
+  }
+
+  .arrow {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+  }
+
+  .left-arrow {
+    left: -20px;
+  }
+
+  .right-arrow {
+    right: -20px;
+  }
+
+  .slideshow-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* ++++ */
+    max-width: 90%;
+    width: 420px;
+    height: 480px; /* Додано фіксовану висоту для контейнера */
+    overflow: hidden;
+    /* margin: 0 auto; */
+    /* width: 80vw; */
+    padding: 4px;
+    margin-bottom: 0;
+    font-size: 10px;
+  }
+
+  .slide {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+  }
+
+  .slide img {
+    width: 100%;
+    height: auto;
+    max-width: 280px; /* Задає максимальну ширину зображення */
+  }
+  .slide .column {
+    flex: 1;
+    padding: 0 12px;
+  }
+  .slide .column h3 {
+    padding-bottom: 8px;
+    color: #ed5516;
+    font-size: 16px;
+  }
+  .slide .column h4 {
+    padding-bottom: 8px;
+    color: #ed5516;
+    font-size: 13px;
+  }
+  .column p {
+    padding: 0;
+    margin: 2px;
+  }
+  .active {
+    opacity: 1;
+    z-index: 1;
+  }
+
+  .next-btn {
+    display: block;
+    margin: 0px auto;
+    padding: 4px 16px;
+    font-size: 14px;
+    color: #fff;
+    background-color: black;
+    border: 1px solid #b30000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+      border-color 0.3s ease;
+  }
+
+  .frame-container {
+    position: relative;
+    max-width: 380px;
+    margin: 0 auto;
+    text-align: center;
+    margin: 8px;
+    font-size: 12px;
+  }
+
+  .frame {
+    display: none;
+    padding: 8px;
+  }
+
+  /* .frame.active {
+    display: block;
+  } */
+
+  .indicator-container {
+    text-align: center;
+    padding: 8px;
+  }
+
+  .indicator {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+
+  /* .indicator.active {
+    background-color: red;
+  } */
+
+  .contact-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+    justify-content: center;
+    align-items: center;
+    width: 360px;
+
+    flex-wrap: wrap;
+    padding: 8px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .map-container {
+    flex: 1;
+    max-width: 160px;
+    height: 120px;
+    align-items: center;
+    /* width: 80px;
+  height: 160px; */
+    margin-right: 12px;
+    cursor: pointer;
+  }
+
+  .contact-info {
+    flex: 1;
+    min-width: 160px;
+  }
+
+  .contact-info h3 {
+    margin-top: 0;
+    font-size: 14px;
+  }
+  .schedule {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    margin: 2px;
+    font-size: 12px;
+  }
+  p > a {
+    padding: 16px;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .cr {
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    padding: 0;
+    margin: 0;
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 4px;
+    padding: 2px;
+  }
+  .my {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
