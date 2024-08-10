@@ -891,7 +891,12 @@ p > a {
     width: 100%;
     padding: 2px; /* Відступи навколо контейнера кнопок */
   }
-
+  .scroll-top-btn {
+    right: 50%;
+    transform: translateX(50%);
+    /* відступ знизу */
+    bottom: 12px;
+  }
   a .blbtn {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1249,7 +1254,12 @@ p > a {
     text-decoration: none; /* Відсутність підкреслення */
     transition: background 0.03s ease; /* Плавний перехід фону */
   }
-
+  .scroll-top-btn {
+    right: 50%;
+    transform: translateX(50%);
+    /* відступ знизу */
+    bottom: 12px;
+  }
   .photo,
   .text {
     width: 100%; /* Ширина 100% для кожного елемента в колонці */

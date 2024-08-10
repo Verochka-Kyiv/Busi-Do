@@ -55,7 +55,7 @@
         <div class="sectionName">КОМАНДА НАШИХ ТРЕНЕРІВ</div>
         <div class="listtrainers">
             <div class="item-left">
-                <img src="/img/trainers/mi.jpg" alt=`Head of the "BUSI-DO" Club` class="photo">
+                <img src="/img/trainers/mi2.png" alt=`Head of the "BUSI-DO" Club` class="photo">
                 <div class="text">
                     <p class="train-header">старший тренер</p>
                     <p class="train-header">Яковлев Максим Ігорович</p>
@@ -92,7 +92,22 @@
 
             </div>
             <div class="item-left">
-                <img src="/img/trainers/ml.jpg" alt=`Instructor` class="photo">
+                <img src="/img/trainers/vp.png" alt=`Instructor` class="photo">
+                <div class="text">
+                    <p class="train-header">молодша інструкторка</p>
+                    <p class="train-header"> Павліченко Валерія</p>
+                    {{!-- <p class="train-status">Голова Клубу "БУСІ-ДО"</p> --}}
+                    <ul class="info">
+                        <li>коричневий пояс 2 КЮ</li>
+                        <li>почала займатися Карате-До Шотокан у 2016 р.</li>
+                        <li>інструкторський досвід з 2022 р.</li>
+                        <li>багаторазова Чемпіонка Києва та України</li>
+                        <li>входить в судівську колегію м. Києва (практика бокового судді та секретаря майданчика)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item-right">
+                <img src="/img/trainers/ml2.png" alt=`Instructor` class="photo">
                 <div class="text">
                     <p class="train-header">молодша інструкторка</p>
                     <p class="train-header">Лисенко Марина</p>
@@ -107,8 +122,8 @@
                     </ul>
                 </div>
             </div>
-            <div class="item-right">
-                <img src="/img/trainers/ak.jpg" alt=`instructor` class="photo">
+            <div class="item-left">
+                <img src="/img/trainers/ak1.png" alt=`instructor` class="photo">
                 <div class="text">
                     <p class="train-header">молодший інструктор</p>
                     <p class="train-header">Кудлай Артем</p>
@@ -123,7 +138,7 @@
                 </div>
 
             </div>
-            <div class="item-left">
+            <div class="item-right">
                 <img src="/img/trainers/sv.png" alt=`Instructor` class="photo">
                 <div class="text">
                     <p class="train-header">молодша інструкторка</p>
@@ -229,133 +244,40 @@
         <container class="gall">
             <div class="gallery">
                 <div class="main-photo">
-                    <img id="currentPhoto" src="/img/PhotoMoments/_E2A9554.jpg" alt="Фото">
+                    <img id="currentPhoto" src="/img/PhotoMoments/1.jpg" alt="Фото">
                 </div>
                 <div class="thumbnails">
+                    <script>
+                        const totalPhotos = 28; // Загальна кількість фото
+                        for (let i = 1; i <= totalPhotos; i++) {
+                            document.write(`
                     <div class="thumbnail">
-                        <img src="/img/PhotoMoments/003-DSC_0490.jpg" alt="Мініатюра 1"
-                            onclick="changePhoto('/img/PhotoMoments/003-DSC_0490.jpg')">
+                        <img src="/img/PhotoMoments/${i}.jpg" alt="Мініатюра ${i}"
+                             onclick="changePhoto('/img/PhotoMoments/${i}.jpg')">
+                    </div>
+                `);
+                        }
+                    </script>
+                    {{!-- <div class="thumbnail">
+                        <img src="/img/PhotoMoments/1.jpg" alt="Мініатюра 1"
+                            onclick="changePhoto('/img/PhotoMoments/1.jpg')">
                     </div>
                     <div class="thumbnail">
-                        <img src="/img/PhotoMoments/008-DSC_0498.jpg" alt="Мініатюра 2"
-                            onclick="changePhoto('/img/PhotoMoments/008-DSC_0498.jpg')">
+                        <img src="/img/PhotoMoments/2.jpg" alt="Мініатюра 2"
+                            onclick="changePhoto('/img/PhotoMoments/2.jpg')">
                     </div>
-                    <div class="thumbnail">
-                        <img src="/img/PhotoMoments/053-DSC_0150.jpg" alt="Мініатюра 3"
-                            onclick="changePhoto('/img/PhotoMoments/053-DSC_0150.jpg')">
-                    </div>
-                    <div class="thumbnail">
-                        <img src="/img/PhotoMoments/064-DSC_0192.jpg" alt="Мініатюра 4"
-                            onclick="changePhoto('/img/PhotoMoments/064-DSC_0192.jpg')">
-                    </div>
-                    <div class="thumbnail">
-                        <img src="/img/PhotoMoments/066-DSC_0194.jpg" alt="Мініатюра 5"
-                            onclick="changePhoto('/img/PhotoMoments/066-DSC_0194.jpg')">
-                    </div>
-                    <div class="thumbnail">
-                        <img src="/img/PhotoMoments/075-DSC_0214.jpg" alt="Мініатюра 6"
-                            onclick="changePhoto('/img/PhotoMoments/075-DSC_0214.jpg')">
-                    </div>
-                    <div class="thumbnail">
-                        <img src="/img/PhotoMoments/090-DSC_0237.jpg" alt="Мініатюра 7"
-                            onclick="changePhoto('/img/PhotoMoments/090-DSC_0237.jpg')">
-                    </div>
-                    <div class="thumbnail">
-                        <img src="/img/PhotoMoments/095-DSC_0255.jpg" alt="Мініатюра 8"
-                            onclick="changePhoto('/img/PhotoMoments/095-DSC_0255.jpg')">
-                    </div>
-                    <div class="thumbnail">
-                        <img src="/img/PhotoMoments/111-DSC_0275.jpg" alt="Мініатюра 9"
-                            onclick="changePhoto('/img/PhotoMoments/111-DSC_0275.jpg')">
-                    </div>
-                    <div class="thumbnail">
-                        <img src="/img/PhotoMoments/112-DSC_0276.jpg" alt="Мініатюра 10"
-                            onclick="changePhoto('/img/PhotoMoments/112-DSC_0276.jpg')">
-                    </div>
-                    <div class="thumbnail">
-                        <img src="/img/PhotoMoments/115-DSC_0281.jpg" alt="Мініатюра 11"
-                            onclick="changePhoto('/img/PhotoMoments/115-DSC_0281.jpg')">
-                    </div>
-                    <div class="thumbnail">
-                        <img src="/img/PhotoMoments/168-DSC_0369.jpg" alt="Мініатюра 12"
-                            onclick="changePhoto('/img/PhotoMoments/168-DSC_0369.jpg')">
-                    </div>
-                    <div class="thumbnail">
-                        <img src="/img/PhotoMoments/172-DSC_0374.jpg" alt="Мініатюра 13"
-                            onclick="changePhoto('/img/PhotoMoments/172-DSC_0374.jpg')">
-                    </div>
-                    <div class="thumbnail">
-                        <img src="/img/PhotoMoments/20181213_172945.jpg" alt="Мініатюра 14"
-                            onclick="changePhoto('/img/PhotoMoments/20181213_172945.jpg')">
-                    </div>
-                    <div class="thumbnail">
-                        <img src="/img/PhotoMoments/20181214_140544.jpg" alt="Мініатюра 15"
-                            onclick="changePhoto('/img/PhotoMoments/20181214_140544.jpg')">
-                    </div>
-                    <div class="thumbnail">
-                        <img src="/img/PhotoMoments/20181222_145004.jpg" alt="Мініатюра 16"
-                            onclick="changePhoto('/img/PhotoMoments/20181222_145004.jpg')">
-                    </div>
-                    <div class="thumbnail">
-                        <div class="thumbnail">
-                            <img src="/img/PhotoMoments/20190201_163629.jpg" alt="Мініатюра 17"
-                                onclick="changePhoto('/img/PhotoMoments/20190201_163629.jpg')">
-                        </div>
-                        <div class="thumbnail">
-                            <img src="/img/PhotoMoments/20190210_215439.jpg" alt="Мініатюра 18"
-                                onclick="changePhoto('/img/PhotoMoments/20190210_215439.jpg')">
-                        </div>
-                        <div class="thumbnail">
-                            <img src="/img/PhotoMoments/20190522_151451.jpg" alt="Мініатюра 19"
-                                onclick="changePhoto('/img/PhotoMoments/20190522_151451.jpg')">
-                        </div>
-                        <div class="thumbnail">
-                            <img src="/img/PhotoMoments/20190529_154400.jpg" alt="Мініатюра 20"
-                                onclick="changePhoto('/img/PhotoMoments/20190529_154400.jpg')">
-                        </div>
-                        <div class="thumbnail">
-                            <img src="/img/PhotoMoments/20190530_180944.jpg" alt="Мініатюра 21"
-                                onclick="changePhoto('/img/PhotoMoments/20190530_180944.jpg')">
-                        </div>
-                        <div class="thumbnail">
-                            <img src="/img/PhotoMoments/20190530_181404.jpg" alt="Мініатюра 22"
-                                onclick="changePhoto('/img/PhotoMoments/20190530_181404.jpg')">
-                        </div>
-                        <div class="thumbnail">
-                            <img src="/img/PhotoMoments/20210526_162015.jpg" alt="Мініатюра 23"
-                                onclick="changePhoto('/img/PhotoMoments/20210526_162015.jpg')">
-                        </div>
-                        <div class="thumbnail">
-                            <img src="/img/PhotoMoments/20210526_195901.jpg" alt="Мініатюра 24"
-                                onclick="changePhoto('/img/PhotoMoments/20210526_195901.jpg')">
-                        </div>
-                        <div class="thumbnail">
-                            <img src="/img/PhotoMoments/20210928_184817.jpg" alt="Мініатюра 25"
-                                onclick="changePhoto('/img/PhotoMoments/20210928_184817.jpg')">
-                        </div>
-                        <div class="thumbnail">
-                            <img src="/img/PhotoMoments/DSC05083.jpg" alt="Мініатюра 26"
-                                onclick="changePhoto('/img/PhotoMoments/DSC05083.jpg')">
-                        </div>
-                        <div class="thumbnail">
-                            <img src="/img/PhotoMoments/DSC05095.jpg" alt="Мініатюра 27"
-                                onclick="changePhoto('/img/PhotoMoments/DSC05095.jpg')">
-                        </div>
-                        <div class="thumbnail">
-                            <img src="/img/PhotoMoments/IMAG0878.jpg" alt="Мініатюра 28"
-                                onclick="changePhoto('/img/PhotoMoments/IMAG0878.jpg')">
-                        </div>
-                        <div class="thumbnail">
-                            <img src="/img/PhotoMoments/IMAG2322.jpg" alt="Мініатюра 29"
-                                onclick="changePhoto('/img/PhotoMoments/IMAG2322.jpg')">
-                        </div>
-                        <div class="thumbnail">
-                            <img src="/img/PhotoMoments/IMG-c8-V.jpg" alt="Мініатюра 30"
-                                onclick="changePhoto('/img/PhotoMoments/IMG-c8-V.jpg')">
-                        </div>
 
+                    <div class="thumbnail">
+                        <img src="/img/PhotoMoments/3.jpg" alt="Мініатюра 3"
+                            onclick="changePhoto('/img/PhotoMoments/3.jpg')">
                     </div>
+                    <div class="thumbnail">
+                        <img src="/img/PhotoMoments/4.jpg" alt="Мініатюра 4"
+                            onclick="changePhoto('/img/PhotoMoments/4.jpg')">
+                    </div> --}}
+
                 </div>
+            </div>
         </container>
         <script>
             function changePhoto(src) {
@@ -380,8 +302,7 @@
                 /*Список зображень*/
                 '/img/Champions/1.jpg', '/img/Champions/2.jpg', '/img/Champions/3.jpg', '/img/Champions/4.jpg', '/img/Champions/5.jpg',
                 '/img/Champions/6.jpg', '/img/Champions/7.jpg', '/img/Champions/8.jpg', '/img/Champions/9.jpg', '/img/Champions/10.jpg',
-                '/img/Champions/11.jpg', '/img/Champions/ChampUkraine.jpg', '/img/Champions/group1.jpg', '/img/Champions/medals.jpg', '/img/Champions/trainers1.jpg',
-                '/img/Champions/trainers2.jpg'
+                '/img/Champions/11.jpg', '/img/Champions/12.jpg', '/img/Champions/13.jpg', '/img/Champions/14.jpg', '/img/Champions/15.jpg', '/img/Champions/16.jpg', '/img/Champions/17.jpg', '/img/Champions/18.jpg', '/img/Champions/19.jpg', '/img/Champions/20.jpg', '/img/Champions/21.jpg', '/img/Champions/22.jpg', '/img/Champions/23.jpg', '/img/Champions/24.jpg', '/img/Champions/25.jpg', '/img/Champions/26.jpg', '/img/Champions/27.jpg', '/img/Champions/28.jpg', '/img/Champions/29.jpg', '/img/Champions/ChampUkraine.jpg', '/img/Champions/medals.jpg',
             ];
 
             const gallery = document.getElementById('photo-gallery');
@@ -611,13 +532,51 @@
             // Показати перший фрейм спочатку
             showFrame(currentFrameIndex);
 
-            // Перемикати фрейми кожні 6 секунд
-            setInterval(nextFrame, 6000);
+            // Перемикати фрейми кожні 7 секунд
+            setInterval(nextFrame, 7000);
         </script>
-
-
         <container class="gall">
             <div class="gallery">
+                <div class="main-photo">
+                    <img id="currentPhoto1" src="/img/camp/22.jpg" alt="Фото">
+                </div>
+                <div class="thumbnails" id="thumbnailsContainer">
+                    <!-- Тут будуть додані мініатюри через JavaScript -->
+                </div>
+            </div>
+        </container>
+
+        <script>
+            window.onload = function () {
+                const totalPhotos = 50; // Загальна кількість фото
+                const thumbnailsContainer = document.getElementById('thumbnailsContainer');
+
+                for (let i = 1; i <= totalPhotos; i++) {
+                    const thumbnailDiv = document.createElement('div');
+                    thumbnailDiv.className = 'thumbnail';
+
+                    const img = document.createElement('img');
+                    img.src = `/img/camp/${i}.jpg`;
+                    img.alt = `Мініатюра ${i}`;
+                    img.onclick = function () {
+                        changePhoto_c(`/img/camp/${i}.jpg`);
+                    };
+
+                    thumbnailDiv.appendChild(img);
+                    thumbnailsContainer.appendChild(thumbnailDiv);
+                }
+            };
+
+            function changePhoto_c(src) {
+                document.getElementById('currentPhoto1').src = src;
+            }
+        </script>
+
+        {{!-- <container class="gall"> --}}
+
+
+
+            {{!-- <div class="gallery">
                 <div class="main-photo">
                     <img id="currentPhoto1" src="/img/camp/22.jpg" alt="Фото">
                 </div>
@@ -634,115 +593,15 @@
                     <div class="thumbnail">
                         <img src="/img/camp/4.jpg" alt="Мініатюра 4" onclick="changePhoto_c('/img/camp/4.jpg')">
                     </div>
-                    <div class="thumbnail">
-                        <img src="/img/camp/5.jpg" alt="Мініатюра 5" onclick="changePhoto_c('/img/camp/5.jpg')">
-                    </div>
-                    <div class="thumbnail">
-                        <img src="/img/camp/6.jpg" alt="Мініатюра 6" onclick="changePhoto_c('/img/camp/6.jpg)">
-                    </div>
-                    <div class="thumbnail">
-                        <img src="/img/camp/7.jpg" alt="Мініатюра 7" onclick="changePhoto_c('/img/camp/7.jpg')">
-                    </div>
-                    <div class="thumbnail">
-                        <img src="/img/camp/8.jpg" alt="Мініатюра 8" onclick="changePhoto_c('/img/camp/8.jpg')">
-                    </div>
-                    <div class="thumbnail">
-                        <img src="/img/camp/9.jpg" alt="Мініатюра 9" onclick="changePhoto_c('/img/camp/9.jpg')">
-                    </div>
-                    <div class="thumbnail">
-                        <img src="/img/camp/10.jpg" alt="Мініатюра 10" onclick="changePhoto_c('/img/camp/10.jpg')">
-                    </div>
-                    <div class="thumbnail">
-                        <img src="/img/camp/11.jpg" alt="Мініатюра 11" onclick="changePhoto_c('/img/camp/11.jpg')">
-                    </div>
-                    <div class="thumbnail">
-                        <img src="/img/camp/12.jpg" alt="Мініатюра 12" onclick="changePhoto_c('/img/camp/12.jpg')">
-                    </div>
-                    <div class="thumbnail">
-                        <img src="/img/camp/13.jpg" alt="Мініатюра 13" onclick="changePhoto_c('/img/camp/13.jpg')">
-                    </div>
-                    <div class="thumbnail">
-                        <img src="/img/camp/14.jpg" alt="Мініатюра 14" onclick="changePhoto_c('/img/camp/14.jpg')">
-                    </div>
-                    <div class="thumbnail">
-                        <img src="/img/camp/15.jpg" alt="Мініатюра 15" onclick="changePhoto_c('/img/camp/15.jpg')">
-                    </div>
-                    <div class="thumbnail">
-                        <img src="/img/camp/16.jpg" alt="Мініатюра 16" onclick="changePhoto_c('/img/camp/16.jpg')">
-                    </div>
-                    <div class="thumbnail">
-                        <div class="thumbnail">
-                            <img src="/img/camp/17.jpg" alt="Мініатюра 17" onclick="changePhoto_c('/img/camp/17.jpg')">
-                        </div>
-                        <div class="thumbnail">
-                            <img src="/img/camp/18.jpg" alt="Мініатюра 18" onclick="changePhoto_c('/img/camp/18.jpg')">
-                        </div>
-                        <div class="thumbnail">
-                            <img src="/img/camp/19.jpg" alt="Мініатюра 19" onclick="changePhoto_c('/img/camp/19.jpg')">
-                        </div>
-                        <div class="thumbnail">
-                            <img src="/img/camp/20.jpg" alt="Мініатюра 20" onclick="changePhoto_c('/img/camp/20.jpg')">
-                        </div>
-                        <div class="thumbnail">
-                            <img src="/img/camp/21.jpg" alt="Мініатюра 21" onclick="changePhoto_c('/img/camp/21.jpg')">
-                        </div>
-                        <div class="thumbnail">
-                            <img src="/img/camp/22.jpg" alt="Мініатюра 22" onclick="changePhoto_c('/img/camp/22.jpg')">
-                        </div>
-                        <div class="thumbnail">
-                            <img src="/img/camp/23.jpg" alt="Мініатюра 23" onclick="changePhoto_c('/img/camp/23.jpg')">
-                        </div>
-                        <div class="thumbnail">
-                            <img src="/img/camp/24.jpg" alt="Мініатюра 24" onclick="changePhoto_c('/img/camp/24.jpg')">
-                        </div>
-                        <div class="thumbnail">
-                            <img src="/img/camp/25.jpg" alt="Мініатюра 25" onclick="changePhoto_c('/img/camp/25.jpg')">
-                        </div>
-                        <div class="thumbnail">
-                            <img src="/img/camp/26.jpg" alt="Мініатюра 26" onclick="changePhoto_c('/img/camp/26.jpg')">
-                        </div>
-                        <div class="thumbnail">
-                            <img src="/img/camp/27.jpg" alt="Мініатюра 27" onclick="changePhoto_c('/img/camp/27.jpg')">
-                        </div>
-                        <div class="thumbnail">
-                            <img src="/img/camp/28.jpg" alt="Мініатюра 28" onclick="changePhoto_c('/img/camp/28.jpg')">
-                        </div>
-                        <div class="thumbnail">
-                            <img src="/img/camp/29.jpg" alt="Мініатюра 29" onclick="changePhoto_c('/img/camp/29.jpg')">
-                        </div>
-                        <div class="thumbnail">
-                            <img src="/img/camp/30.jpg" alt="Мініатюра 30" onclick="changePhoto_c('/img/camp/30.jpg')">
-                        </div>
-                        <div class="thumbnail">
-                            <img src="/img/camp/31.jpg" alt="Мініатюра 31" onclick="changePhoto_c('/img/camp/31.jpg')">
-                        </div>
-                        <div class="thumbnail">
-                            <img src="/img/camp/32.jpg" alt="Мініатюра 32" onclick="changePhoto_c('/img/camp/32.jpg')">
-                        </div>
-                        <div class="thumbnail">
-                            <img src="/img/camp/33.jpg" alt="Мініатюра 33" onclick="changePhoto_c('/img/camp/33.jpg')">
-                        </div>
-                        <div class="thumbnail">
-                            <img src="/img/camp/34.jpg" alt="Мініатюра 34" onclick="changePhoto_c('/img/camp/34.jpg')">
-                        </div>
-                        <div class="thumbnail">
-                            <img src="/img/camp/35.jpg" alt="Мініатюра 35" onclick="changePhoto_c('/img/camp/35.jpg')">
-                        </div>
-                        <div class="thumbnail">
-                            <img src="/img/camp/36.jpg" alt="Мініатюра 36" onclick="changePhoto_c('/img/camp/36.jpg')">
-                        </div>
-                        <div class="thumbnail">
-                            <img src="/img/camp/37.jpg" alt="Мініатюра 37" onclick="changePhoto_c('/img/camp/37.jpg')">
-                        </div>
-
-                    </div>
                 </div>
+            </div>
         </container>
         <script>
             function changePhoto_c(src) {
                 document.getElementById('currentPhoto1').src = src;
             }
-        </script>
+        </script> --}}
+
     </section>
     <div class="line"></div>
     {{!-- --------------CONTACTS---------------------------- --}}
@@ -837,7 +696,7 @@
             <p class="schedule">СР. 17:00 - 18:30;  18:30 - 20:00</p>
             <p class="schedule">ЧТ. 16:00 - 18:00; 18:00 - 20:00</p>
             <p class="schedule">ПТ. 17:00 - 18:30;  18:30 - 20:00</p>
-            <p class="schedule">СБ. 10:00 - 12:00; 12:00 - 14:00</p>
+            <p class="schedule">СБ. 10:00 - 12:00; 12:00 - 14:00; 16:00 - 18:00</p>
             <p class="schedule">Подробиці уточнюйте за телефоном: <a class="welcome-mob" href="tel:+380632413351">+380
                     63 241 33 51</a>
             </p>
@@ -854,14 +713,13 @@
         {{!-- ------------------------------------------ --}}
         <div class="whiteline"></div>
         <p class="footer">Karate Club "Busi-Do" 2024 <img class="cr" src="/img/cr.jpg"></p>
+
         <div class="whiteline1"> </div>
         <p class="footer my">This site was made by Verochka</p>
         <div class="whiteline"></div>
     </footer>
     {{!-- ------------------------------------------ --}}
 </main>
-
-
 
 {{!-- Цей код містить лише те, що буде виводитись в
 
